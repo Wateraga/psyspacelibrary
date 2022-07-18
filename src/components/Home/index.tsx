@@ -1,5 +1,38 @@
-import { Container, Heading, Stack, Text, Button } from "@chakra-ui/react";
+import {
+  Container,
+  Heading,
+  Stack,
+  Text,
+  Button,
+  Flex,
+} from "@chakra-ui/react";
+import Lottie from "react-lottie";
+import ChakaraLottie from "../../assests/animations/chakraLottie.json";
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import About from "../About";
+import Newsletter from "../Newsletter";
+
+//default Options for lottie animation
+const defaultOptions = {
+  loop: false,
+  autoplay: true,
+  animationData: ChakaraLottie,
+  rendererSettings: {
+    preserveAspectRatio: "xMidYMid slice",
+  },
+};
 const Home = () => {
+  const [isDesktop, setDesktop] = useState(window.innerWidth > 480);
+
+  const updateMedia = () => {
+    setDesktop(window.innerWidth > 480);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", updateMedia);
+    return () => window.removeEventListener("resize", updateMedia);
+  });
   return (
     <>
       <Container maxW={"5xl"}>
@@ -25,26 +58,33 @@ const Home = () => {
             smart “Daily Agenda” every morning.
           </Text>
           <Stack spacing={6} direction={"row"}>
-            <Button
-              rounded={"full"}
-              px={6}
-              colorScheme={"orange"}
-              bg={"orange.400"}
-              _hover={{ bg: "orange.500" }}
-            >
-              Get started
-            </Button>
+            <Link to="/library">
+              <Button
+                rounded={"full"}
+                px={6}
+                colorScheme={"orange"}
+                bg={"orange.400"}
+                _hover={{ bg: "orange.500" }}
+              >
+                Get started
+              </Button>
+            </Link>
             <Button rounded={"full"} px={6}>
               Learn more
             </Button>
           </Stack>
-          {/* <Flex w={"full"}>
-            <Illustration
-              height={{ sm: "24rem", lg: "28rem" }}
-              mt={{ base: 12, sm: 16 }}
-            />
-          </Flex> */}
+          {isDesktop ? (
+            <Flex w={"full"}>
+              <Lottie options={defaultOptions} width={500} height={500} />
+            </Flex>
+          ) : (
+            <Flex w={"full"}>
+              <Lottie options={defaultOptions} />
+            </Flex>
+          )}
         </Stack>
+        <About />
+        <Newsletter />
       </Container>
     </>
   );

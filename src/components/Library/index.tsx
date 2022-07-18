@@ -1,7 +1,10 @@
-import React from "react";
-
+import Sidebar from "../Sidebar";
 const Library = () => {
-  return <div>Library</div>;
+  return (
+    <>
+      <Sidebar children={undefined} />
+    </>
+  );
 };
 
 export default Library;
