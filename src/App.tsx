@@ -1,8 +1,7 @@
 //app entry
+import React from "react"
 import { Routes, Route } from "react-router-dom";
-import Home from "./components/Home";
 import Library from "./components/Library";
-import Layout from "./components/Layout";
 import MainLayout from "./routes/MainLayout";
 
 function App() {

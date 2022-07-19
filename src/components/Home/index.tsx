@@ -1,3 +1,4 @@
+import React from "react";
 import {
   Container,
   Heading,
@@ -23,12 +24,14 @@ const defaultOptions = {
   },
 };
 const Home = () => {
-  const [isDesktop, setDesktop] = useState(window.innerWidth > 480);
+  const [isDesktop, setDesktop] = useState<boolean>(window.innerWidth > 480); // Desktop satate to determine screen size
 
   const updateMedia = () => {
+    // updatae media function to set the updated desktop size
     setDesktop(window.innerWidth > 480);
   };
 
+  //Effect to add event listener to window object to tringer resize method when screen size chanegs
   useEffect(() => {
     window.addEventListener("resize", updateMedia);
     return () => window.removeEventListener("resize", updateMedia);

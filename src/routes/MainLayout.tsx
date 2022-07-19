@@ -1,8 +1,11 @@
-//app entry
+import React from "react"
 import { Routes, Route } from "react-router-dom";
 import Home from "src/components/Home";
-import Library from "src/components/Library";
 import Layout from "src/components/Layout";
+
+/**
+ * MainLayout component to seperate the homepage from the main library view and have seperate routin.
+ */
 
 function MainLayout() {
   return (

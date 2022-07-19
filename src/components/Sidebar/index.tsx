@@ -17,26 +17,22 @@ import {
 import {
   FiHome,
   FiTrendingUp,
-  FiCompass,
-  FiStar,
-  FiSettings,
   FiMenu,
 } from "react-icons/fi";
 import { IconType } from "react-icons";
+import { Link as Linkk } from "react-router-dom";
 
 interface LinkItemProps {
   name: string;
   icon: IconType;
+  link: string;
 }
 const LinkItems: Array<LinkItemProps> = [
-  { name: "Home", icon: FiHome },
-  { name: "Trending", icon: FiTrendingUp },
-  { name: "Explore", icon: FiCompass },
-  { name: "Favourites", icon: FiStar },
-  { name: "Settings", icon: FiSettings },
+  { name: "Home", icon: FiHome, link: "/" },
+  { name: "Trending", icon: FiTrendingUp, link: "/library/trending" },
 ];
 
-export default function Sidebar({ children }: { children: ReactNode }) {
+export default function Sidebar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <Box minH="100vh" bg={useColorModeValue("gray.100", "gray.900")}>
@@ -59,9 +55,9 @@ export default function Sidebar({ children }: { children: ReactNode }) {
       </Drawer>
       {/* mobilenav */}
       <MobileNav display={{ base: "flex", md: "none" }} onOpen={onOpen} />
-      <Box ml={{ base: 0, md: 60 }} p="4">
+      {/* <Box ml={{ base: 0, md: 60 }} p="4">
         {children}
-      </Box>
+      </Box> */}
     </Box>
   );
 }
@@ -88,9 +84,11 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
         <CloseButton display={{ base: "flex", md: "none" }} onClick={onClose} />
       </Flex>
       {LinkItems.map((link) => (
-        <NavItem key={link.name} icon={link.icon}>
-          {link.name}
-        </NavItem>
+        <Linkk to={link.link} key={link.name}>
+          <NavItem icon={link.icon} link={link.link}>
+            {link.name}
+          </NavItem>
+        </Linkk>
       ))}
     </Box>
   );
@@ -99,14 +97,11 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
 interface NavItemProps extends FlexProps {
   icon: IconType;
   children: ReactNode;
+  link: string;
 }
 const NavItem = ({ icon, children, ...rest }: NavItemProps) => {
   return (
-    <Link
-      href="#"
-      style={{ textDecoration: "none" }}
-      _focus={{ boxShadow: "none" }}
-    >
+    <Link style={{ textDecoration: "none" }} _focus={{ boxShadow: "none" }}>
       <Flex
         align="center"
         p="4"

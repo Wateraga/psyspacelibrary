@@ -1,3 +1,4 @@
+import React from "react";
 import {
   Box,
   Container,
@@ -12,6 +13,7 @@ import {
 // import { CheckIcon } from "@chakra-ui/icons";
 import { TbMushroom } from "react-icons/tb";
 // Replace test data with your own
+// eslint-disable-next-line prefer-spread
 const features = Array.apply(null, Array(6)).map(function(x, i) {
   return {
     id: i,

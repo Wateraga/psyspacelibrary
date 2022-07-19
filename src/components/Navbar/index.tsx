@@ -1,23 +1,21 @@
-import { ReactNode } from "react";
+import React from "react";
 import {
   Box,
   Flex,
-  Link,
   Button,
   Menu,
   MenuButton,
-  useDisclosure,
-  useColorModeValue,
   Stack,
   useColorMode,
-  Image,
+  // Image,
 } from "@chakra-ui/react";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
-import psyLogo from "src/assests/images/PsySpace-logo-55x55.png";
+// import PsyLogo from "src/assests/images/PsySpace-logo-55x55.png";
+
+
 
 export default function Navbar() {
   const { colorMode, toggleColorMode } = useColorMode();
-  const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>
       <Box
@@ -39,9 +37,7 @@ export default function Navbar() {
             lg: "space-aroung",
           }}
         >
-          <Box>
-            <Image src={psyLogo} alt="logo" />
-          </Box>
+          <Box>{/* <Image src={PsyLogo} alt="logo" /> */}logo</Box>
 
           <Flex alignItems={"center"}>
             <Stack direction={"row"} spacing={7}>
