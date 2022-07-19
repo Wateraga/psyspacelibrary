@@ -61,7 +61,7 @@ const Home = () => {
             smart “Daily Agenda” every morning.
           </Text>
           <Stack spacing={6} direction={"row"}>
-            <Link to="/library">
+            <Link to="/library/home">
               <Button
                 rounded={"full"}
                 px={6}

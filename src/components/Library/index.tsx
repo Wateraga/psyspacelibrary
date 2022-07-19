@@ -1,9 +1,15 @@
-import Sidebar from "../Sidebar";
 import React from "react";
+import Sidebar from "../Sidebar";
+import {  Routes, Route } from "react-router-dom";
+import Demo from "./Demo";
 const Library = () => {
   return (
     <>
-      <Sidebar></Sidebar>
+      <Sidebar>
+          <Routes>
+          <Route path="home" element={<Demo />} />
+        </Routes>
+      </Sidebar>
     </>
   );
 };
