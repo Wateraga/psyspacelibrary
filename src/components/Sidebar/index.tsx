@@ -14,12 +14,8 @@ import {
   BoxProps,
   FlexProps,
 } from "@chakra-ui/react";
-import {
-  FiHome,
-  FiTrendingUp,
-  FiMenu,
-} from "react-icons/fi";
-import {TbArrowLeft} from "react-icons/tb"
+import { FiHome, FiTrendingUp, FiMenu } from "react-icons/fi";
+import { TbArrowLeft } from "react-icons/tb";
 import { IconType } from "react-icons";
 import { Link as Linkk } from "react-router-dom";
 interface LinkItemProps {
@@ -32,36 +28,40 @@ const LinkItems: Array<LinkItemProps> = [
   { name: "Trending", icon: FiTrendingUp, link: "/library/trending" },
 ];
 
-export default function Sidebar({children}: {children: React.ReactNode}) {
+export default function Sidebar({ children }: { children: React.ReactNode }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>
-    <Flex>
-    <Box minH="100vh" minW="100vw" bg={useColorModeValue("gray.100", "gray.900")}>
-      <SidebarContent
-        onClose={() => onClose}
-        display={{ base: "none", md: "block" }}
-      />
-      <Drawer
-        autoFocus={false}
-        isOpen={isOpen}
-        placement="left"
-        onClose={onClose}
-        returnFocusOnClose={false}
-        onOverlayClick={onClose}
-        size="full"
-      >
-        <DrawerContent>
-          <SidebarContent onClose={onClose} />
-        </DrawerContent>
-      </Drawer>
-      {/* mobilenav */}
-      <MobileNav display={{ base: "flex", md: "none" }} onOpen={onOpen} />
-      <Box ml={{ base: 0, md: 60 }} p="4">
-        {children}
-      </Box>
-    </Box>
-    </Flex>
+      <Flex>
+        <Box
+          minH="100vh"
+          minW="100vw"
+          bg={useColorModeValue("gray.100", "gray.900")}
+        >
+          <SidebarContent
+            onClose={() => onClose}
+            display={{ base: "none", md: "block" }}
+          />
+          <Drawer
+            autoFocus={false}
+            isOpen={isOpen}
+            placement="left"
+            onClose={onClose}
+            returnFocusOnClose={false}
+            onOverlayClick={onClose}
+            size="full"
+          >
+            <DrawerContent>
+              <SidebarContent onClose={onClose} />
+            </DrawerContent>
+          </Drawer>
+          {/* mobilenav */}
+          <MobileNav display={{ base: "flex", md: "none" }} onOpen={onOpen} />
+          <Box ml={{ base: 0, md: 60 }} p="4">
+            {children}
+          </Box>
+        </Box>
+      </Flex>
     </>
   );
 }
@@ -86,23 +86,21 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
           <Flex gap={5}>
             <Box>
               <Linkk to="/">
-              <TbArrowLeft />
+                <TbArrowLeft />
               </Linkk>
             </Box>
             <Box> Logo</Box>
-            </Flex>
-          
+          </Flex>
         </Text>
         <CloseButton display={{ base: "flex", md: "none" }} onClick={onClose} />
       </Flex>
       {LinkItems.map((link) => (
         <Linkk to={link.link} key={link.name}>
-          <NavItem icon={link.icon} link={link.link} onClick={onClose}  >
+          <NavItem icon={link.icon} link={link.link} onClick={onClose}>
             {link.name}
           </NavItem>
         </Linkk>
       ))}
-     
     </Box>
   );
 };
