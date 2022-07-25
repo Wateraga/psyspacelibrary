@@ -40,7 +40,14 @@ export default function About() {
       <Container maxW={"5xl"} mt={10}>
         <SimpleGrid columns={{ base: 1, md: 2, lg: 2 }} spacing={10}>
           {featureList.map((feature) => (
-            <HStack key={feature.id} align={"top"}>
+            <HStack
+              key={feature.id}
+              align={"top"}
+              border="1px"
+              borderColor="gray.200"
+              borderRadius={20}
+              p={6}
+            >
               <Box color={"#FF0080"} px={2}>
                 <Icon as={TbMushroom} w={6} h={6} />
               </Box>

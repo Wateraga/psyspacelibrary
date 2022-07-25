@@ -13,21 +13,14 @@ import {
   useDisclosure,
   BoxProps,
   FlexProps,
+  Image,
 } from "@chakra-ui/react";
-import { FiHome, FiTrendingUp, FiMenu } from "react-icons/fi";
+import { FiMenu } from "react-icons/fi";
 import { TbArrowLeft } from "react-icons/tb";
-import { IconType } from "react-icons";
 import { Link as Linkk } from "react-router-dom";
-interface LinkItemProps {
-  name: string;
-  icon: IconType;
-  link: string;
-}
-const LinkItems: Array<LinkItemProps> = [
-  { name: "Home", icon: FiHome, link: "/library/home" },
-  { name: "Trending", icon: FiTrendingUp, link: "/library/trending" },
-];
-
+import { IconType } from "react-icons";
+import { LinkItems } from "src/library/data/sidebarData";
+import PsySpaceLogo from "src/assests/images/PsySpace-text-log-350x60.png";
 export default function Sidebar({ children }: { children: React.ReactNode }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
@@ -82,14 +75,20 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
       {...rest}
     >
       <Flex h="20" alignItems="center" mx="8" justifyContent="space-between">
-        <Text fontSize="2xl" fontFamily="monospace" fontWeight="bold">
+        <Text fontSize="2xl" fontWeight="bold">
           <Flex gap={5}>
-            <Box>
+            <Box pt={{ base: 3, md: 2 }}>
               <Linkk to="/">
                 <TbArrowLeft />
               </Linkk>
             </Box>
-            <Box> Logo</Box>
+            <Box>
+              <Image
+                src={PsySpaceLogo}
+                alt="logo"
+                width={{ base: 40, md: 60 }}
+              />
+            </Box>
           </Flex>
         </Text>
         <CloseButton display={{ base: "flex", md: "none" }} onClick={onClose} />
@@ -121,8 +120,8 @@ const NavItem = ({ icon, children, ...rest }: NavItemProps) => {
         role="group"
         cursor="pointer"
         _hover={{
-          bg: "cyan.400",
-          color: "white",
+          bg: "#86FBFB",
+          color: "black",
         }}
         {...rest}
       >
@@ -131,7 +130,7 @@ const NavItem = ({ icon, children, ...rest }: NavItemProps) => {
             mr="4"
             fontSize="16"
             _groupHover={{
-              color: "white",
+              color: "black",
             }}
             as={icon}
           />
@@ -164,10 +163,9 @@ const MobileNav = ({ onOpen, ...rest }: MobileProps) => {
         aria-label="open menu"
         icon={<FiMenu />}
       />
-
-      <Text fontSize="2xl" ml="8" fontFamily="monospace" fontWeight="bold">
-        Logo
-      </Text>
+      <Box p={4}>
+        <Image src={PsySpaceLogo} alt="logo" width={{ base: 40, md: 60 }} />
+      </Box>
     </Flex>
   );
 };

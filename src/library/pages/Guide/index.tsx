@@ -1,10 +1,9 @@
 import React from "react";
 import { Box } from "@chakra-ui/react";
-const Demo = () => {
+const Guide = () => {
   return (
     <Box p={5}>
-      
-      Demo Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dolor
+      Guide Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dolor
       eos maxime quisquam voluptates numquam atque dolorum non esse. Debitis hic
       iusto suscipit explicabo quae deserunt, eligendi accusamus quo incidunt
       aliquid commodi delectus qui.
@@ -12,4 +11,4 @@ const Demo = () => {
   );
 };
 
-export default Demo;
+export default Guide;

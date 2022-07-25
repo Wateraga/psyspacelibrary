@@ -21,6 +21,7 @@
     "baseUrl": ".",
     
   },
-  "include": ["src", "index.d.ts", "mdx.d.ts"]
+  "include": ["src", "index.d.ts"]
 }
+
 
