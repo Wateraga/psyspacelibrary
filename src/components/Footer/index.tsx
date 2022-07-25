@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import {
   Box,
   chakra,
@@ -9,13 +9,13 @@ import {
   Text,
   VisuallyHidden,
   Input,
+  Image,
   IconButton,
   useColorModeValue,
 } from "@chakra-ui/react";
-import { ReactNode } from "react";
-import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaGlobe, FaReddit } from "react-icons/fa";
 import { BiMailSend } from "react-icons/bi";
-
+import PsySpaceLogo from "src/assests/images/PsySpace-text-log-350x60.png";
 
 //Social media button component
 const SocialButton = ({
@@ -72,39 +72,35 @@ export default function Footer() {
         >
           <Stack spacing={6}>
             <Box>
-              {/* <Logo color={useColorModeValue("gray.700", "white")} /> */}
-              Logo
+              <Link href="https://psyspace.in" isExternal>
+                <Image src={PsySpaceLogo} alt="logo" />
+              </Link>
             </Box>
-            <Text fontSize={"sm"}>
-              © 2022 Chakra Templates. All rights reserved
-            </Text>
+            <Text fontSize={"sm"}>© 2022 PsySpace. All rights reserved</Text>
             <Stack direction={"row"} spacing={6}>
-              <SocialButton label={"Twitter"} href={"#"}>
-                <FaTwitter />
+              <SocialButton
+                label={"reddit"}
+                href={"https://www.reddit.com/r/psyspace/"}
+              >
+                <FaReddit />
               </SocialButton>
-              <SocialButton label={"YouTube"} href={"#"}>
-                <FaYoutube />
-              </SocialButton>
-              <SocialButton label={"Instagram"} href={"#"}>
-                <FaInstagram />
+
+              <SocialButton label={"website"} href={"https://psyspace.in"}>
+                <FaGlobe />
               </SocialButton>
             </Stack>
           </Stack>
           <Stack align={"flex-start"}>
             <ListHeader>Company</ListHeader>
-            <Link href={"#"}>About us</Link>
-            <Link href={"#"}>Blog</Link>
-            <Link href={"#"}>Contact us</Link>
-            <Link href={"#"}>Pricing</Link>
-            <Link href={"#"}>Testimonials</Link>
+            <Link href={"#"}>About</Link>
+            <Link href={"#"}>Contact</Link>
+            <Link href={"#"}>Contribute</Link> <Link href={"#"}>Sponsor</Link>
           </Stack>
           <Stack align={"flex-start"}>
             <ListHeader>Support</ListHeader>
-            <Link href={"#"}>Help Center</Link>
             <Link href={"#"}>Terms of Service</Link>
             <Link href={"#"}>Legal</Link>
             <Link href={"#"}>Privacy Policy</Link>
-            <Link href={"#"}>Satus</Link>
           </Stack>
           <Stack align={"flex-start"}>
             <ListHeader>Stay up to date</ListHeader>

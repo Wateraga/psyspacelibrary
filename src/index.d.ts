@@ -1,5 +1,3 @@
 declare module "*.jpg";
 declare module "*.jpeg";
-declare module "*.png" {
-  const value: any;
-}
+declare module "*.png";

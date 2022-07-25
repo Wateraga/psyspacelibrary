@@ -1,0 +1,24 @@
+{
+    "feature": [
+        {
+            "id": 1,
+            "title": "Lear about different Tryptamines/ Psychedelics",
+            "text": "Learn about different psychedelics and about their effects, history, pharmacology and more."
+        },
+        {
+            "id": 2,
+            "title": "List of resources on Microdosing",
+            "text": "You can not miss microdosing! learn more about this new trend and how people are adopting it."
+        },
+        {
+            "id": 3,
+            "title": "Catch up with what's latest in the feild",
+            "text": "Catch up with the latest news and research about psychedelics from all around the web."
+        },
+        {
+            "id": 4,
+            "title": "A begineer's guide to psychedelics",
+            "text": "Follow links on this page to set a base ground about psychedelics and about harm reduction"
+        }
+    ]
+}

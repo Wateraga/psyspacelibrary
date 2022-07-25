@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import {
   Container,
   Heading,
@@ -8,11 +8,11 @@ import {
   Flex,
 } from "@chakra-ui/react";
 import Lottie from "react-lottie";
-import ChakaraLottie from "../../assests/animations/chakraLottie.json";
-import { useState, useEffect } from "react";
+import ChakaraLottie from "../../../src/assests/animations/chakraLottie.json";
 import { Link } from "react-router-dom";
-import About from "../About";
-import Newsletter from "../Newsletter";
+import About from "src/components/About";
+import Newsletter from "src/components/Newsletter";
+import OpensourceBanner from "src/components/OpensourceBanner";
 
 //default Options for lottie animation
 const defaultOptions = {
@@ -47,18 +47,22 @@ const Home = () => {
         >
           <Heading
             fontWeight={600}
-            fontSize={{ base: "3xl", sm: "4xl", md: "6xl" }}
+            fontSize={{ base: "6xl", sm: "6xl", md: "8xl" }}
             lineHeight={"110%"}
           >
-            Meeting scheduling{" "}
-            <Text as={"span"} color={"orange.400"}>
-              made easy
+            {/* Free{" "} */}
+            <Text
+              as={"span"}
+              bgGradient={"linear(to-l, #86FBFB, #FF0080)"}
+              bgClip="text"
+            >
+              PsySpace Library
             </Text>
           </Heading>
-          <Text color={"gray.500"} maxW={"3xl"}>
-            Never miss a meeting. Never be late for one too. Keep track of your
-            meetings and receive smart reminders in appropriate times. Read your
-            smart “Daily Agenda” every morning.
+          <Text color={"gray.500"} maxW={"3xl"} fontSize={{ md: "2xl" }}>
+            PsySpace presents psyspace library, an opensource community driven
+            project to bring curated resouces from all around the web about
+            psychedelics and psychedelic use
           </Text>
           <Stack spacing={6} direction={"row"}>
             <Link to="/library/home">
@@ -66,19 +70,23 @@ const Home = () => {
                 rounded={"full"}
                 px={6}
                 colorScheme={"orange"}
-                bg={"orange.400"}
-                _hover={{ bg: "orange.500" }}
+                bg={"#FF0080"}
+                _hover={{ bg: "#86FBFB", textColor: "black" }}
               >
-                Get started
+                Go to Library
               </Button>
             </Link>
-            <Button rounded={"full"} px={6}>
+            <Button
+              rounded={"full"}
+              px={6}
+              onClick={() => window.location.replace("/#about")}
+            >
               Learn more
             </Button>
           </Stack>
           {isDesktop ? (
             <Flex w={"full"}>
-              <Lottie options={defaultOptions} width={500} height={500} />
+              <Lottie options={defaultOptions} width={450} height={450} />
             </Flex>
           ) : (
             <Flex w={"full"}>
@@ -87,6 +95,7 @@ const Home = () => {
           )}
         </Stack>
         <About />
+        <OpensourceBanner />
         <Newsletter />
       </Container>
     </>

@@ -1,12 +1,12 @@
 import React from "react";
-import Sidebar from "../Sidebar";
-import {  Routes, Route } from "react-router-dom";
-import Demo from "./Demo";
+import Sidebar from "../components/Sidebar";
+import { Routes, Route } from "react-router-dom";
+import Demo from "../pages/Demo";
 const Library = () => {
   return (
     <>
       <Sidebar>
-          <Routes>
+        <Routes>
           <Route path="home" element={<Demo />} />
         </Routes>
       </Sidebar>

@@ -12,33 +12,36 @@ import {
 } from "@chakra-ui/react";
 // import { CheckIcon } from "@chakra-ui/icons";
 import { TbMushroom } from "react-icons/tb";
-// Replace test data with your own
-// eslint-disable-next-line prefer-spread
-const features = Array.apply(null, Array(6)).map(function(x, i) {
-  return {
-    id: i,
-    title: "Lorem ipsum dolor sit amet",
-    text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.",
-  };
-});
-
+import data from "../../data/about.json";
+const featureList = data.feature;
 export default function About() {
   return (
-    <Box p={4} mb={30}>
+    <Box p={4} id="about">
       <Stack spacing={4} as={Container} maxW={"3xl"} textAlign={"center"}>
-        <Heading fontSize={"3xl"}>This is the headline</Heading>
-        <Text color={"gray.600"} fontSize={"xl"}>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua.
+        <Heading fontSize={"4xl"} fontWeight={800}>
+          About
+          <Text
+            as={"span"}
+            bgGradient={"linear(to-l, #86FBFB, #FF0080)"}
+            bgClip="text"
+            p={1}
+          >
+            PsySpace
+          </Text>
+          Library
+        </Heading>
+        <Text color={"gray.600"} fontSize={{ md: "2xl" }}>
+          PsySpace library aims to provides you with all the latest and up to
+          date resources to learn and educate yourself about the sensible use of
+          psychedelics
         </Text>
       </Stack>
 
       <Container maxW={"5xl"} mt={10}>
         <SimpleGrid columns={{ base: 1, md: 2, lg: 2 }} spacing={10}>
-          {features.map((feature) => (
+          {featureList.map((feature) => (
             <HStack key={feature.id} align={"top"}>
-              <Box color={"green.400"} px={2}>
+              <Box color={"#FF0080"} px={2}>
                 <Icon as={TbMushroom} w={6} h={6} />
               </Box>
               <VStack align={"start"}>
@@ -48,6 +51,19 @@ export default function About() {
             </HStack>
           ))}
         </SimpleGrid>
+      </Container>
+      <Container pt={20}>
+        <Stack textAlign={"center"}>
+          <Heading
+            fontWeight={600}
+            fontSize={{ base: "3xl", sm: "xl", md: "3xl" }}
+            lineHeight={"110%"}
+            bgGradient={"linear(to-l, #86FBFB, #FF0080)"}
+            bgClip="text"
+          >
+            <Text>...And More</Text>
+          </Heading>
+        </Stack>
       </Container>
     </Box>
   );

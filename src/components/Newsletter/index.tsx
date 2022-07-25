@@ -1,5 +1,4 @@
-import React from "react";
-import { FormEvent, ChangeEvent, useState } from "react";
+import React, { FormEvent, ChangeEvent, useState } from "react";
 import {
   Stack,
   FormControl,
@@ -22,7 +21,7 @@ export default function Newsletter() {
 
   return (
     <Flex
-      minH={"400"}
+      minH={"300"}
       align={"center"}
       justify={"center"}
       //   bg={useColorModeValue("gray.50", "gray.800")}

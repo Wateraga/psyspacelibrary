@@ -1,9 +1,8 @@
 //app entry
-import React from "react"
+import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Library from "./components/Library";
+import Library from "./library/routes";
 import MainLayout from "./routes/MainLayout";
-
 function App() {
   return (
     <>
