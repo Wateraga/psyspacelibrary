@@ -9,7 +9,7 @@ import {
   Button,
 } from "@chakra-ui/react";
 import { AiFillGithub } from "react-icons/ai";
-export default function OpensourceBanner() {
+const OpensourceBanner = () => {
   return (
     <Box p={4} mb={30} mt={20}>
       <Stack spacing={4} as={Container} maxW={"3xl"} textAlign={"center"}>
@@ -79,4 +79,6 @@ export default function OpensourceBanner() {
       </Stack>
     </Box>
   );
-}
+};
+
+export default OpensourceBanner;

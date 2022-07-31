@@ -1,0 +1,42 @@
+{
+    "sectionHeading": "Psychedelic Guide",
+    "sectionHeadingDesc": "Here you will find guides to all mainstream and come experimental psychedelics, the hyper links are chosen keeping all type of audience in mind, feel free to read in any order 👀",
+    "post": [
+        {
+            "id": 1,
+            "postHeading": "LSD ",
+            "postBody": "Acid Rain",
+            "link": "https://thethirdwave.co/psychedelics/lsd/"
+        },
+        {
+            "id": 2,
+            "postHeading": "Magic Mushrooms",
+            "postBody": "Not the fridge one's",
+            "link": "https://www.shroomery.org/12500/Psilocybe-cubensis"
+        },
+        {
+            "id": 3,
+            "postHeading": "DMT",
+            "postBody": "Spirit molecule",
+            "link": "https://www.healthline.com/health/what-is-dmt"
+        },
+        {
+            "id": 4,
+            "postHeading": "MDMA",
+            "postBody": "Ecstacy",
+            "link": "https://thethirdwave.co/psychedelics/mdma/"
+        },
+        {
+            "id": 5,
+            "postHeading": "2C-B",
+            "postBody": "Child of acid & MDMA",
+            "link": "https://www.drugscience.org.uk/drug-information/2cb/"
+        },
+        {
+            "id": 6,
+            "postHeading": "Salvia",
+            "postBody": "Meet the god",
+            "link": "https://www.verywellmind.com/salvia-divinorum-a-legal-trip-3200920"
+        }
+    ]
+}

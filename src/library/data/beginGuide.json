@@ -1,0 +1,21 @@
+{
+    "sectionHeading": "This is section heading",
+    "sectionHeadingDesc": "This is the heading of the section, which will describe what the particular guide section is about",
+    "post": [
+        {
+            "id": 1,
+            "postHeading": "This is post Heading 0",
+            "postBody": "this is post body containing small description"
+        },
+        {
+            "id": 1,
+            "postHeading": "This is post Heading 1",
+            "postBody": "this is post body containing small description"
+        },
+        {
+            "id": 1,
+            "postHeading": "This is post Heading 2",
+            "postBody": "this is post body containing small description"
+        }
+    ]
+}

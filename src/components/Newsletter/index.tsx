@@ -12,7 +12,7 @@ import {
 } from "@chakra-ui/react";
 import { CheckIcon } from "@chakra-ui/icons";
 
-export default function Newsletter() {
+const Newsletter = () => {
   const [email, setEmail] = useState("");
   const [state, setState] = useState<"initial" | "submitting" | "success">(
     "initial"
@@ -107,4 +107,5 @@ export default function Newsletter() {
       </Container>
     </Flex>
   );
-}
+};
+export default Newsletter;

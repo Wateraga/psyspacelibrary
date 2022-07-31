@@ -14,7 +14,7 @@ import {
 import { TbMushroom } from "react-icons/tb";
 import data from "../../data/about.json";
 const featureList = data.feature;
-export default function About() {
+const About = () => {
   return (
     <Box p={4} id="about">
       <Stack spacing={4} as={Container} maxW={"3xl"} textAlign={"center"}>
@@ -74,4 +74,6 @@ export default function About() {
       </Container>
     </Box>
   );
-}
+};
+
+export default About;

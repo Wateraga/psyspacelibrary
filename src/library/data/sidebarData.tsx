@@ -1,4 +1,7 @@
-import { FiHome, FiTrendingUp } from "react-icons/fi";
+import { FiHome, FiBook } from "react-icons/fi";
+import { TbMushroom } from "react-icons/tb";
+import { GiPill } from "react-icons/gi";
+import { BiNews } from "react-icons/bi";
 import { IconType } from "react-icons";
 
 interface LinkItemProps {
@@ -6,17 +9,43 @@ interface LinkItemProps {
   icon: IconType;
   link: string;
 }
+//Active options in side bar
 export const LinkItems: Array<LinkItemProps> = [
-  { name: "Psychedelics", icon: FiHome, link: "/library/home" },
+  { name: "Psychedelics", icon: TbMushroom, link: "/library/home" },
   {
     name: "Beginner's guide",
-    icon: FiTrendingUp,
+    icon: FiBook,
     link: "/library/beginners-guide",
   },
-  { name: "Microdosing", icon: FiTrendingUp, link: "/library/microdosing" },
+  { name: "Microdosing", icon: GiPill, link: "/library/microdosing" },
   {
     name: "Latest News",
-    icon: FiTrendingUp,
-    link: "/library/trendinglatest-news",
+    icon: BiNews,
+    link: "/library/latest-news",
+  },
+];
+
+//coming soon items interface
+interface ComingSoonTypes {
+  name: string;
+  icon: IconType;
+}
+//Coming soon options in side bar
+export const ComingSoonItems: Array<ComingSoonTypes> = [
+  {
+    name: "Newsletters",
+    icon: FiHome,
+  },
+  {
+    name: "Newsletters",
+    icon: FiHome,
+  },
+  {
+    name: "Newsletters",
+    icon: FiHome,
+  },
+  {
+    name: "Newsletters",
+    icon: FiHome,
   },
 ];

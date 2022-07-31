@@ -13,16 +13,20 @@ import {
   useDisclosure,
   BoxProps,
   FlexProps,
+  useColorMode,
+  Button,
   Image,
 } from "@chakra-ui/react";
+import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 import { FiMenu } from "react-icons/fi";
 import { TbArrowLeft } from "react-icons/tb";
 import { Link as Linkk } from "react-router-dom";
 import { IconType } from "react-icons";
-import { LinkItems } from "src/library/data/sidebarData";
+import { LinkItems, ComingSoonItems } from "src/library/data/sidebarData";
 import PsySpaceLogo from "src/assests/images/PsySpace-text-log-350x60.png";
-export default function Sidebar({ children }: { children: React.ReactNode }) {
+const Sidebar = ({ children }: { children: React.ReactNode }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
+
   return (
     <>
       <Flex>
@@ -57,13 +61,15 @@ export default function Sidebar({ children }: { children: React.ReactNode }) {
       </Flex>
     </>
   );
-}
+};
 
 interface SidebarProps extends BoxProps {
   onClose: () => void;
 }
 
 const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
+  const { colorMode, toggleColorMode } = useColorMode();
+
   return (
     <Box
       bg={useColorModeValue("white", "gray.900")}
@@ -100,6 +106,27 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
           </NavItem>
         </Linkk>
       ))}
+      <Button onClick={toggleColorMode}>
+        {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
+      </Button>
+      {/* <Box w="100%" backgroundColor={"grey"} mt={4} h={8}>
+        <Flex justifyContent={"center"}>
+          <Text color={"black"} mt={1}>
+            Coming Soon
+          </Text>
+        </Flex>
+        <Box mt={5}>
+          {ComingSoonItems.map((link) => (
+            <ComingSoonNavItem
+              icon={link.icon}
+              key={link.name}
+              onClick={onClose}
+            >
+              {link.name}
+            </ComingSoonNavItem>
+          ))}
+        </Box>
+      </Box> */}
     </Box>
   );
 };
@@ -141,10 +168,53 @@ const NavItem = ({ icon, children, ...rest }: NavItemProps) => {
   );
 };
 
+// //nav items coming soo
+// interface ComingSoonNavItemProps extends FlexProps {
+//   icon: IconType;
+//   children: ReactNode;
+// }
+// const ComingSoonNavItem = ({
+//   icon,
+//   children,
+//   ...rest
+// }: ComingSoonNavItemProps) => {
+//   return (
+//     <Link style={{ textDecoration: "none" }} _focus={{ boxShadow: "none" }}>
+//       <Flex
+//         align="center"
+//         p="4"
+//         mx="4"
+//         borderRadius="lg"
+//         role="group"
+//         cursor="pointer"
+//         _hover={{
+//           bg: "grey",
+//           color: "black",
+//         }}
+//         {...rest}
+//       >
+//         {icon && (
+//           <Icon
+//             mr="4"
+//             fontSize="16"
+//             _groupHover={{
+//               color: "black",
+//             }}
+//             as={icon}
+//           />
+//         )}
+//         {children}
+//       </Flex>
+//     </Link>
+//   );
+// };
+
 interface MobileProps extends FlexProps {
   onOpen: () => void;
 }
 const MobileNav = ({ onOpen, ...rest }: MobileProps) => {
+  const { colorMode, toggleColorMode } = useColorMode();
+
   return (
     <Flex
       ml={{ base: 0, md: 60 }}
@@ -154,7 +224,7 @@ const MobileNav = ({ onOpen, ...rest }: MobileProps) => {
       bg={useColorModeValue("white", "gray.900")}
       borderBottomWidth="1px"
       borderBottomColor={useColorModeValue("gray.200", "gray.700")}
-      justifyContent="flex-start"
+      justifyContent="space-between"
       {...rest}
     >
       <IconButton
@@ -163,9 +233,13 @@ const MobileNav = ({ onOpen, ...rest }: MobileProps) => {
         aria-label="open menu"
         icon={<FiMenu />}
       />
-      <Box p={4}>
-        <Image src={PsySpaceLogo} alt="logo" width={{ base: 40, md: 60 }} />
+      <Box>
+        <Button onClick={toggleColorMode}>
+          {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
+        </Button>{" "}
       </Box>
     </Flex>
   );
 };
+
+export default Sidebar;

@@ -13,7 +13,7 @@ import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 import PsyLogo from "src/assests/images/PsySpace-logo-100x100.png";
 import PsyTextLogo from "src/assests/images/PsySpace-text-log-350x60.png";
 
-export default function Navbar() {
+const Navbar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
   const [isDesktop, setDesktop] = useState<boolean>(window.innerWidth > 480); // Desktop satate to determine screen size
 
@@ -83,4 +83,6 @@ export default function Navbar() {
       </Box>
     </>
   );
-}
+};
+
+export default Navbar;
