@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    // "outDir": "dist", //where to put TS files
+    "target": "es5", //which level of JS support to target
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "noImplicitAny": true,
@@ -19,6 +20,7 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "baseUrl": ".",
+    
     
   },
   "include": ["src", "index.d.ts"]
