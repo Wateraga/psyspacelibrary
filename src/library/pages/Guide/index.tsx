@@ -1,8 +1,8 @@
 import React from "react";
 import { Grid, GridItem, Container } from "@chakra-ui/react";
 import guideData from "../../data/guide.json";
-import Card from "src/library/components/Card";
-import SectionHeader from "src/library/components/SectionHeader";
+import Card from "library/components/Card";
+import SectionHeader from "library/components/SectionHeader";
 
 const Guide = () => {
   return (
