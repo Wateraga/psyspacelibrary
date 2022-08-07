@@ -56,7 +56,7 @@ const Home = () => {
               bgGradient={"linear(to-l, #86FBFB, #FF0080)"}
               bgClip="text"
             >
-              PsySpace Library
+              PsySpace 
             </Text>
           </Heading>
           <Text color={"gray.500"} maxW={"3xl"} fontSize={{ md: "2xl" }}>
