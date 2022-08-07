@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { getPsyNews, psyNewsArticleShape } from "src/utils/api/news-api";
+import { getPsyNews, psyNewsArticleShape } from "utils/api/news-api";
 import moment from "moment";
-import NewsCard from "src/library/components/NewsCard";
-import SectionHeader from "src/library/components/SectionHeader";
+import NewsCard from "library/components/NewsCard";
+import SectionHeader from "library/components/SectionHeader";
 import {
   Box,
   Text,

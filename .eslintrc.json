@@ -22,18 +22,22 @@
   },
   "plugins": ["react", "@typescript-eslint"],
   "rules": {
-    "react/jsx-filename-extension": ["warn", { "extensions": [".tsx"] }]
+    "react/jsx-filename-extension": ["warn", { "extensions": [".tsx"] }],
+    "@typescript-eslint/import/no-unresolved": "off"
+
     
   },
   "settings": {
     "import/resolver": {
       "typescript": {
-        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+        "extensions": [".js", ".jsx", ".ts", ".tsx"],
+        "moduleDirectory": ["src/", "node_modules"]
+
 
       },
        "node": {
-        "extensions": [".ts", ".tsx"],
-        "moduleDirectory": ["src", "node_modules"]
+        "extensions": [".js", ".jsx", ".ts", ".tsx"],
+        "moduleDirectory": ["src/", "node_modules"]
     }
     },
     "react": {
