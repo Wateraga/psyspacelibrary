@@ -15,7 +15,7 @@ import {
 } from "@chakra-ui/react";
 import { FaGlobe, FaReddit } from "react-icons/fa";
 import { BiMailSend } from "react-icons/bi";
-import PsySpaceLogo from "assests/images/PsySpace-text-log-350x60.png";
+import PsySpaceLogo from "../../assests/images/PsySpace-text-log-350x60.png";
 
 //Social media button component
 const SocialButton = ({

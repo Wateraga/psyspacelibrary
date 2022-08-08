@@ -1,8 +1,8 @@
 import React from "react";
 import { Grid, GridItem, Container } from "@chakra-ui/react";
 import microdosingData from "../../data/microdosing.json";
-import Card from "library/components/Card";
-import SectionHeader from "library/components/SectionHeader";
+import Card from "../../components/Card";
+import SectionHeader from "../../components/SectionHeader";
 const Microdosing = () => {
   return (
     <>

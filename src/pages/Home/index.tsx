@@ -10,9 +10,9 @@ import {
 import Lottie from "react-lottie";
 import ChakaraLottie from "../../../src/assests/animations/chakraLottie.json";
 import { Link } from "react-router-dom";
-import About from "components/About";
-import Newsletter from "components/Newsletter";
-import OpensourceBanner from "components/OpensourceBanner";
+import About from "../../components/About";
+import Newsletter from "../../components/Newsletter";
+import OpensourceBanner from "../../components/OpensourceBanner";
 
 //default Options for lottie animation
 const defaultOptions = {

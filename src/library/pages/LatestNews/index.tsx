@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { getPsyNews, psyNewsArticleShape } from "utils/api/news-api";
+import { getPsyNews, psyNewsArticleShape } from "../../../utils/api/news-api";
 import moment from "moment";
-import NewsCard from "library/components/NewsCard";
-import SectionHeader from "library/components/SectionHeader";
+import NewsCard from "../../components/NewsCard";
+import SectionHeader from "../../components/SectionHeader";
 import {
   Box,
   Text,
@@ -26,12 +26,12 @@ const LatestNews = () => {
   useEffect(() => {
     //calling news api to get the latest news of today's date
     getPsyNews(todayDate, configValue)
-      .then((data) => {
+      .then((data: psyNewsArticleShape) => {
         setNews(data as psyNewsArticleShape);
         setLoading(false);
         setError(false);
       })
-      .catch((err) => {
+      .catch((err: string) => {
         console.log("inside error", err);
         setLoading(false);
         setError(true);

@@ -1,8 +1,8 @@
 import React from "react";
 import { Flex, Container, Button, Heading } from "@chakra-ui/react";
 import beginGuideData from "../../data/beginGuide.json";
-import SectionHeader from "library/components/SectionHeader";
-import StepCard from "library/components/StepCard";
+import SectionHeader from "../../components/SectionHeader";
+import StepCard from "../../components/StepCard";
 import { Step, Steps, useSteps } from "chakra-ui-steps";
 
 //number of steps with description

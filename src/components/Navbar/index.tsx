@@ -10,8 +10,8 @@ import {
   Image,
 } from "@chakra-ui/react";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
-import PsyLogo from "assests/images/PsySpace-logo-100x100.png";
-import PsyTextLogo from "assests/images/PsySpace-text-log-350x60.png";
+import PsyLogo from "../../assests/images/PsySpace-logo-100x100.png";
+import PsyTextLogo from "../../assests/images/PsySpace-text-log-350x60.png";
 
 const Navbar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
