@@ -5,7 +5,7 @@ import SectionHeader from "../../components/SectionHeader";
 import StepCard from "../../components/StepCard";
 import { Step, Steps, useSteps } from "chakra-ui-steps";
 
-//number of steps with description
+// number of steps with description
 const steps = [
   { label: "Step 1", description: "Step 1 description" },
   { label: "Step 2", description: "Step 2 description" },
@@ -42,7 +42,7 @@ const Contents = ({ index }: { index: number }) => {
   return <>{stepNumber(index)}</>;
 };
 
-//Beginner Guide
+// Beginner Guide
 const BeginGuide = () => {
   const { nextStep, prevStep, reset, activeStep, setStep } = useSteps({
     initialStep: 0,

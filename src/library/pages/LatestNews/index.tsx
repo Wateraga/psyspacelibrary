@@ -19,12 +19,13 @@ const LatestNews = () => {
     useState<boolean>(true); // loading state
   const [error, setError]: [boolean, (error: boolean) => void] =
     useState(false);
-  const todayDate = moment().subtract(2, "days").format("YYYY/MM/DD"); //getting previous days date in requiered format
-  const configValue: string = process.env.REACT_APP_NEWS_API as string; //getting api end point from env
-  const toast = useToast(); //chakra ui toast to show error message
+  const todayDate = moment().subtract(2, "days").format("YYYY/MM/DD"); // getting previous days date in requiered format
+  const configValue: string = process.env.REACT_APP_NEWS_API as string; // getting api end point from env
+  console.log(24, configValue);
+  const toast = useToast(); // chakra ui toast to show error message
 
   useEffect(() => {
-    //calling news api to get the latest news of today's date
+    // calling news api to get the latest news of today's date
     getPsyNews(todayDate, configValue)
       .then((data: psyNewsArticleShape) => {
         setNews(data as psyNewsArticleShape);

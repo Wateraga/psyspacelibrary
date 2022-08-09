@@ -12,6 +12,7 @@ import {
 } from "@chakra-ui/react";
 // import { CheckIcon } from "@chakra-ui/icons";
 import { TbMushroom } from "react-icons/tb";
+import { Link } from "react-router-dom";
 import data from "../../data/about.json";
 const featureList = data.feature;
 const About = () => {
@@ -40,22 +41,25 @@ const About = () => {
       <Container maxW={"5xl"} mt={10}>
         <SimpleGrid columns={{ base: 1, md: 2, lg: 2 }} spacing={10}>
           {featureList.map((feature) => (
-            <HStack
-              key={feature.id}
-              align={"top"}
-              border="1px"
-              borderColor="gray.200"
-              borderRadius={20}
-              p={6}
-            >
-              <Box color={"#FF0080"} px={2}>
-                <Icon as={TbMushroom} w={6} h={6} />
-              </Box>
-              <VStack align={"start"}>
-                <Text fontWeight={600}>{feature.title}</Text>
-                <Text color={"gray.600"}>{feature.text}</Text>
-              </VStack>
-            </HStack>
+            <Link to={feature.to} key={feature.id}>
+              <HStack
+                key={feature.id}
+                align={"top"}
+                _hover={{ borderColor: "#FF0080" }}
+                border="1px"
+                borderColor="gray.200"
+                borderRadius={20}
+                p={6}
+              >
+                <Box color={"#FF0080"} px={2}>
+                  <Icon as={TbMushroom} w={6} h={6} />
+                </Box>
+                <VStack align={"start"}>
+                  <Text fontWeight={600}>{feature.title}</Text>
+                  <Text color={"gray.600"}>{feature.text}</Text>
+                </VStack>
+              </HStack>
+            </Link>
           ))}
         </SimpleGrid>
       </Container>
@@ -68,7 +72,9 @@ const About = () => {
             bgGradient={"linear(to-l, #86FBFB, #FF0080)"}
             bgClip="text"
           >
-            <Text>...And More</Text>
+            <Link to={"/library/home"}>
+              <Text>...And More</Text>
+            </Link>
           </Heading>
         </Stack>
       </Container>

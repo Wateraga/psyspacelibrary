@@ -17,7 +17,7 @@ import { FaGlobe, FaReddit } from "react-icons/fa";
 import { BiMailSend } from "react-icons/bi";
 import PsySpaceLogo from "../../assests/images/PsySpace-text-log-350x60.png";
 
-//Social media button component
+//  Social media button component
 const SocialButton = ({
   children,
   label,
@@ -50,7 +50,7 @@ const SocialButton = ({
   );
 };
 
-//List header to modify heading stylig for the column of itmes in the footer
+//  List header to modify heading stylig for the column of itmes in the footer
 const ListHeader = ({ children }: { children: ReactNode }) => {
   return (
     <Text fontWeight={"500"} fontSize={"lg"} mb={2}>

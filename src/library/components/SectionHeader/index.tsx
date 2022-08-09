@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Flex, Text, chakra } from "@chakra-ui/react";
-//section header prop type
+// section header prop type
 interface SectionHeaderTypes {
   sectionHeading: string;
   sectionBody: string;

@@ -14,7 +14,7 @@ import About from "../../components/About";
 import Newsletter from "../../components/Newsletter";
 import OpensourceBanner from "../../components/OpensourceBanner";
 
-//default Options for lottie animation
+// default Options for lottie animation
 const defaultOptions = {
   loop: false,
   autoplay: true,
@@ -31,7 +31,7 @@ const Home = () => {
     setDesktop(window.innerWidth > 480);
   };
 
-  //Effect to add event listener to window object to tringer resize method when screen size chanegs
+  // Effect to add event listener to window object to tringer resize method when screen size chanegs
   useEffect(() => {
     window.addEventListener("resize", updateMedia);
     return () => window.removeEventListener("resize", updateMedia);

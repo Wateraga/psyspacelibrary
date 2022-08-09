@@ -3,7 +3,6 @@ import Sidebar from "../components/Sidebar";
 import { Routes, Route } from "react-router-dom";
 import Guide from "../pages/Guide";
 import BeginGuide from "../pages/BeginGuide";
-// eslint-disable-next-line import/namespace
 import LatestNews from "../pages/LatestNews";
 import Microdosing from "../pages/Microdosing";
 const Library = () => {

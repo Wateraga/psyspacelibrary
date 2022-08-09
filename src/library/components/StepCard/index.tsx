@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Text, chakra } from "@chakra-ui/react";
 
-//stepcard prop types
+// stepcard prop types
 interface StepCardTypes {
   stepHeading: string;
   stepBody: string;
