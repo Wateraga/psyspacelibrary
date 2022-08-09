@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Flex, Link, Text, chakra } from "@chakra-ui/react";
 import moment from "moment";
-//NewCard prop types
+// NewCard prop types
 interface NewCardTypes {
   imgUrl: string;
   articleHeading: string;

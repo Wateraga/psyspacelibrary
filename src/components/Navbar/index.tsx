@@ -22,7 +22,7 @@ const Navbar = () => {
     setDesktop(window.innerWidth > 480);
   };
 
-  //Effect to add event listener to window object to tringer resize method when screen size chanegs
+  // Effect to add event listener to window object to tringer resize method when screen size chanegs
   useEffect(() => {
     window.addEventListener("resize", updateMedia);
     return () => window.removeEventListener("resize", updateMedia);

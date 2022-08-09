@@ -72,7 +72,9 @@ const About = () => {
             bgGradient={"linear(to-l, #86FBFB, #FF0080)"}
             bgClip="text"
           >
-            <Text>...And More</Text>
+            <Link to={"/library/home"}>
+              <Text>...And More</Text>
+            </Link>
           </Heading>
         </Stack>
       </Container>

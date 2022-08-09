@@ -9,7 +9,7 @@ interface LinkItemProps {
   icon: IconType;
   link: string;
 }
-//Active options in side bar
+// Active options in side bar
 export const LinkItems: Array<LinkItemProps> = [
   { name: "Psychedelics", icon: TbMushroom, link: "/library/home" },
   {
@@ -25,12 +25,12 @@ export const LinkItems: Array<LinkItemProps> = [
   },
 ];
 
-//coming soon items interface
+// coming soon items interface
 interface ComingSoonTypes {
   name: string;
   icon: IconType;
 }
-//Coming soon options in side bar
+// Coming soon options in side bar
 export const ComingSoonItems: Array<ComingSoonTypes> = [
   {
     name: "Newsletters",

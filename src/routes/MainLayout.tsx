@@ -4,9 +4,11 @@ import Home from "../pages/Home";
 import Layout from "../components/Layout";
 
 /**
- * MainLayout component to seperate the homepage from the main library view and have seperate routin.
- */
-
+ * Component for rendering main routes.
+ *
+ * @component
+ * @return {route} routes
+ **/
 function MainLayout() {
   return (
     <>
