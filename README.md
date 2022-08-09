@@ -21,7 +21,7 @@ Library can be found on the link below.
 
 <br>
 
-If you think that these can be improved in any way, please do suggest. Also, if you would like to contribute to existing roadmaps or add a new roadmap, please open an issue or reach out to [@dhashdev](https://twitter.com/dhashdev) or [@psyspacenetwork](https://twitter.com/psyspacenetwork) .
+If you think the project can be improved in any way, please do suggest. Also, if you would like to contribute or add a new resources, please open an issue or reach out to [@dhashdev](https://twitter.com/dhashdev) or [@psyspacenetwork](https://twitter.com/psyspacenetwork) .
 
 ## Development
 
