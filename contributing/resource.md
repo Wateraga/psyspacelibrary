@@ -1,9 +1,10 @@
 ## New Resource
 
-Please just mention the library section and the resouce that needs to be added in the following format:
+Please just mention the library section (the sidebar) and the resouce (the single card like many in that section) that needs to be added in the following format:
 
-1. Resource Name: rName
-2. Link: rLink
+1. Section Name: sName
+2. Resource Name: rName
+3. Link: rLink
 
 ## Existing Resources
 

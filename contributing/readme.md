@@ -5,7 +5,7 @@
 
 ## Contributing
 
-- [Submitting roadmaps](./resource.md)
+- [Adding Resources](./resource.md)
 <!-- - [Adding resources](https://github.com/kamranahmedse/developer-roadmap/issues/985) -->
 
 ## Guidelines
@@ -13,7 +13,7 @@
 - <p><strong>Adding everything available out there is not the goal!</strong><br /> 
   The idea is to have a library of psychedelic resources with most authentic and informative resources which can help genral user get sufficient knowledge about the current resource they are trying to access.</p>
 - <p><strong>Do not add things you have not evaluated personally!</strong><br /> 
-  Use your critical thinking to filter out non-essential stuff. Give honest arguments for why the resource should be included. Have you read this book? Can you give a short article? What does think link have which others don't</p>
+  Use your critical thinking to filter out non-essential stuff. Give honest arguments for why the resource should be included. Have you read this book? Can you give a short article? What does this particular resource link have which others don't.</p>
 - <p><strong>One item per Pull Request</strong><br />
   There may be a discussion related to an item you want to add. Adding just a single item per pull request makes it much easier for everyone involved.</p>
 - Write meaningful commit messages
