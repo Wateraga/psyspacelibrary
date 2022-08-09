@@ -21,6 +21,7 @@ const LatestNews = () => {
     useState(false);
   const todayDate = moment().subtract(2, "days").format("YYYY/MM/DD"); //getting previous days date in requiered format
   const configValue: string = process.env.REACT_APP_NEWS_API as string; //getting api end point from env
+  console.log(24, configValue)
   const toast = useToast(); //chakra ui toast to show error message
 
   useEffect(() => {

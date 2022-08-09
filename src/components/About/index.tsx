@@ -12,6 +12,7 @@ import {
 } from "@chakra-ui/react";
 // import { CheckIcon } from "@chakra-ui/icons";
 import { TbMushroom } from "react-icons/tb";
+import { Link } from "react-router-dom";
 import data from "../../data/about.json";
 const featureList = data.feature;
 const About = () => {
@@ -40,9 +41,12 @@ const About = () => {
       <Container maxW={"5xl"} mt={10}>
         <SimpleGrid columns={{ base: 1, md: 2, lg: 2 }} spacing={10}>
           {featureList.map((feature) => (
+            <Link to={feature.to} key={feature.id}>
             <HStack
               key={feature.id}
-              align={"top"}
+                align={"top"}
+                                _hover={{ borderColor: "#FF0080" }}
+
               border="1px"
               borderColor="gray.200"
               borderRadius={20}
@@ -55,7 +59,9 @@ const About = () => {
                 <Text fontWeight={600}>{feature.title}</Text>
                 <Text color={"gray.600"}>{feature.text}</Text>
               </VStack>
-            </HStack>
+              </HStack>
+              </Link>
+              
           ))}
         </SimpleGrid>
       </Container>
