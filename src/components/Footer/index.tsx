@@ -1,9 +1,9 @@
 import React, { ReactNode } from "react";
+import { Link } from "react-router-dom";
 import {
   Box,
   chakra,
   Container,
-  Link,
   SimpleGrid,
   Stack,
   Text,
@@ -72,7 +72,7 @@ const Footer = () => {
         >
           <Stack spacing={6}>
             <Box>
-              <Link href="https://psyspace.in" isExternal>
+              <Link to="https://psyspace.in">
                 <Image src={PsySpaceLogo} alt="logo" />
               </Link>
             </Box>
@@ -98,12 +98,12 @@ const Footer = () => {
             </Stack>
           </Stack>
           <Stack align={"flex-start"}>
-            <Link href={"/faq"}>FAQ</Link>
-            <Link href={"#"}>Sponsor</Link>
+            <Link to={"/faq"}>FAQ</Link>
+            <Link to={"#"}>Sponsor</Link>
           </Stack>
           <Stack align={"flex-start"}>
-            <Link href={"/terms"}>Terms of Service</Link>
-            <Link href={"/privacy"}>Privacy Policy</Link>
+            <Link to={"/terms"}>Terms of Service</Link>
+            <Link to={"/privacy"}>Privacy Policy</Link>
           </Stack>
           <Stack align={"flex-start"}>
             <ListHeader>Stay up to date</ListHeader>
