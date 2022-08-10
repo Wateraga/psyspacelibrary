@@ -10,7 +10,6 @@ import {
   HStack,
   VStack,
 } from "@chakra-ui/react";
-// import { CheckIcon } from "@chakra-ui/icons";
 import { TbMushroom } from "react-icons/tb";
 import { Link } from "react-router-dom";
 import data from "../../data/about.json";
