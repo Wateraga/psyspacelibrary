@@ -102,8 +102,8 @@ const Footer = () => {
             <Link href={"#"}>Sponsor</Link>
           </Stack>
           <Stack align={"flex-start"}>
-            <Link href={"#"}>Terms of Service</Link>
-            <Link href={""}>Privacy Policy</Link>
+            <Link href={"/terms"}>Terms of Service</Link>
+            <Link href={"/privacy"}>Privacy Policy</Link>
           </Stack>
           <Stack align={"flex-start"}>
             <ListHeader>Stay up to date</ListHeader>
