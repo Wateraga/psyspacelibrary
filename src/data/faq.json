@@ -1,0 +1,34 @@
+{
+  "faq": [
+    {
+      "id": 1,
+      "title": "What is PsySpace Library?",
+      "text": "Learn about different psychedelics and about their effects, history, pharmacology and more."
+    },
+    {
+      "id": 2,
+      "title": "What are plans for PsySpace Library?",
+      "text": "You can not miss microdosing! learn more about this new trend and how people are adopting it."
+    },
+    {
+      "id": 3,
+      "title": "How did you build PsySpace Library?",
+      "text": "Catch up with the latest news and research about psychedelics from all around the web."
+    },
+    {
+      "id": 4,
+      "title": "How does it make money?",
+      "text": "Follow links on this page to set a base ground about psychedelics and about harm reduction"
+    },
+    {
+      "id": 5,
+      "title": "Can I contribute?",
+      "text": "Follow links on this page to set a base ground about psychedelics and about harm reduction"
+    },
+    {
+      "id": 6,
+      "title": "What is the best way to Contact you?",
+      "text": "Follow links on this page to set a base ground about psychedelics and about harm reduction"
+    }
+  ]
+}

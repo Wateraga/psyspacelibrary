@@ -8,6 +8,7 @@ import {
   Stack,
   useColorMode,
   Image,
+  Link,
 } from "@chakra-ui/react";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 import PsyLogo from "../../assests/images/PsySpace-logo-100x100.png";
@@ -49,17 +50,21 @@ const Navbar = () => {
           }}
         >
           {isDesktop ? (
-            <Box>
-              <Image
-                src={PsyTextLogo}
-                alt="logo"
-                width={{ base: 40, lg: 40 }}
-              />
-            </Box>
+            <Link href="/">
+              <Box>
+                <Image
+                  src={PsyTextLogo}
+                  alt="logo"
+                  width={{ base: 40, lg: 40 }}
+                />
+              </Box>
+            </Link>
           ) : (
-            <Box>
-              <Image src={PsyLogo} alt="logo" w={39} />
-            </Box>
+            <Link href="/">
+              <Box>
+                <Image src={PsyLogo} alt="logo" w={39} />
+              </Box>
+            </Link>
           )}
 
           <Flex alignItems={"center"}>

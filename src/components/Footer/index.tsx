@@ -99,19 +99,10 @@ const Footer = () => {
           </Stack>
           <Stack align={"flex-start"}>
             <Link href={"/faq"}>FAQ</Link>
-            <Link href={"#"}>Contact</Link>
-            <Link
-              href={
-                "https://github.com/dhashdev/psyspacelibrary/tree/main/contributing"
-              }
-            >
-              Contribute
-            </Link>{" "}
             <Link href={"#"}>Sponsor</Link>
           </Stack>
           <Stack align={"flex-start"}>
             <Link href={"#"}>Terms of Service</Link>
-            <Link href={"#"}>Legal</Link>
             <Link href={""}>Privacy Policy</Link>
           </Stack>
           <Stack align={"flex-start"}>
