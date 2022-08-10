@@ -48,7 +48,7 @@ const OpensourceBanner = () => {
               alignItems={"center"}
             >
               <Link
-                href="https://github.com/dhashdev/psyspacelibrary"
+                href="https://github.com/dhashdev/psyspacelibrary/tree/main/contributing"
                 isExternal
               >
                 <Button

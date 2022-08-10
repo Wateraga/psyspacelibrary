@@ -13,7 +13,7 @@ import {
   IconButton,
   useColorModeValue,
 } from "@chakra-ui/react";
-import { FaGlobe, FaReddit } from "react-icons/fa";
+import { FaGlobe, FaReddit, FaTwitter } from "react-icons/fa";
 import { BiMailSend } from "react-icons/bi";
 import PsySpaceLogo from "../../assests/images/PsySpace-text-log-350x60.png";
 
@@ -88,19 +88,22 @@ const Footer = () => {
               <SocialButton label={"website"} href={"https://psyspace.in"}>
                 <FaGlobe />
               </SocialButton>
+
+              <SocialButton
+                label={"website"}
+                href={"https://twitter.com/psyspacenetwork"}
+              >
+                <FaTwitter />
+              </SocialButton>
             </Stack>
           </Stack>
           <Stack align={"flex-start"}>
-            <ListHeader>Company</ListHeader>
-            <Link href={"#"}>About</Link>
-            <Link href={"#"}>Contact</Link>
-            <Link href={"#"}>Contribute</Link> <Link href={"#"}>Sponsor</Link>
+            <Link href={"/faq"}>FAQ</Link>
+            <Link href={"#"}>Sponsor</Link>
           </Stack>
           <Stack align={"flex-start"}>
-            <ListHeader>Support</ListHeader>
             <Link href={"#"}>Terms of Service</Link>
-            <Link href={"#"}>Legal</Link>
-            <Link href={"#"}>Privacy Policy</Link>
+            <Link href={""}>Privacy Policy</Link>
           </Stack>
           <Stack align={"flex-start"}>
             <ListHeader>Stay up to date</ListHeader>
