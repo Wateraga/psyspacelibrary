@@ -7,7 +7,7 @@ import FaqSection from "../../components/FaqSection";
  * @component
  * @return {React.ReactComponentElement} author and faq components
  */
-const About = () => {
+const Faq = () => {
   return (
     <>
       <Stack
@@ -28,4 +28,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Faq;
