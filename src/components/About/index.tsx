@@ -7,8 +7,10 @@ import {
   Icon,
   Text,
   Stack,
+  Flex,
   HStack,
   VStack,
+  Button,
 } from "@chakra-ui/react";
 import { TbMushroom } from "react-icons/tb";
 import { Link } from "react-router-dom";
@@ -66,21 +68,18 @@ const About = () => {
           ))}
         </SimpleGrid>
       </Container>
-      <Container pt={20}>
-        <Stack textAlign={"center"}>
-          <Heading
-            fontWeight={600}
-            fontSize={{ base: "3xl", sm: "xl", md: "3xl" }}
-            lineHeight={"110%"}
-            bgGradient={"linear(to-l, #86FBFB, #FF0080)"}
-            bgClip="text"
-          >
-            <Link to={"/library/home"}>
-              <Text>...And More</Text>
-            </Link>
-          </Heading>
-        </Stack>
-      </Container>
+      <Stack
+        pt={{ base: 10, md: 16 }}
+        as={Container}
+        maxW={"3xl"}
+        textAlign={"center"}
+      >
+        <Flex justifyContent={"center"}>
+          <Button rounded={"full"} width={{ base: "40", md: "60" }}>
+            And More
+          </Button>
+        </Flex>
+      </Stack>
     </Box>
   );
 };

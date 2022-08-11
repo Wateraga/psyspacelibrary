@@ -55,22 +55,12 @@ const OpensourceBanner = () => {
                   rounded={"full"}
                   width={{ base: "40", md: "60" }}
                   px={6}
-                  colorScheme={"orange"}
-                  bg={"grey"}
                   leftIcon={<AiFillGithub size={30} />}
-                  _hover={{ bg: "#86FBFB", textColor: "black" }}
                 >
                   Contribute
                 </Button>
               </Link>
-              <Button
-                rounded={"full"}
-                width={{ base: "40", md: "60" }}
-                px={6}
-                colorScheme={"orange"}
-                bg={"grey"}
-                _hover={{ bg: "#86FBFB", textColor: "black" }}
-              >
+              <Button rounded={"full"} width={{ base: "40", md: "60" }} px={6}>
                 Submit a Resouce
               </Button>
             </Stack>
