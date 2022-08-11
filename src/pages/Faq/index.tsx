@@ -1,5 +1,5 @@
 import { Stack, Box } from "@chakra-ui/react";
-import React from "react";
+import React, { useEffect } from "react";
 import Author from "../../components/Author";
 import FaqSection from "../../components/FaqSection";
 
@@ -8,6 +8,11 @@ import FaqSection from "../../components/FaqSection";
  * @return {React.ReactComponentElement} author and faq components
  */
 const Faq = () => {
+  // Effect to scroll on top on inital load
+  // ! Need to find an optimal solution for this, following is temporary solution
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Stack
