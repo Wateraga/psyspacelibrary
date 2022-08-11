@@ -14,20 +14,24 @@ import { TbMushroom } from "react-icons/tb";
 import { Link } from "react-router-dom";
 import data from "../../data/about.json";
 const featureList = data.feature;
+
+/**
+ * @component
+ * @return {React.ReactElement} About page
+ */
 const About = () => {
   return (
     <Box p={4} id="about">
       <Stack spacing={4} as={Container} maxW={"3xl"} textAlign={"center"}>
-        <Heading fontSize={"4xl"} fontWeight={800}>
-          About
+        <Heading fontSize={{ base: "3xl", md: "5xl" }} fontWeight={800}>
+          About{" "}
           <Text
             as={"span"}
             bgGradient={"linear(to-l, #86FBFB, #FF0080)"}
             bgClip="text"
-            p={1}
           >
             PsySpace
-          </Text>
+          </Text>{" "}
           Library
         </Heading>
         <Text color={"gray.600"} fontSize={{ md: "2xl" }}>
