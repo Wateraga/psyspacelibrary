@@ -39,7 +39,7 @@ const Newsletter = () => {
         >
           Subscribe to our Newsletter
         </Heading>
-        <Stack direction={{ base: "column" }} as={"form"} spacing={"12px"}>
+        <Stack direction={{ base: "column" }} spacing={"12px"}>
           <form
             action={`${revueConfigValue}`}
             method="post"
