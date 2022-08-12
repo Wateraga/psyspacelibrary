@@ -75,9 +75,11 @@ const About = () => {
         textAlign={"center"}
       >
         <Flex justifyContent={"center"}>
-          <Button rounded={"full"} width={{ base: "40", md: "60" }}>
-            And More
-          </Button>
+          <Link to={"/library/home"}>
+            <Button rounded={"full"} width={{ base: "40", md: "60" }}>
+              And More
+            </Button>
+          </Link>
         </Flex>
       </Stack>
     </Box>
