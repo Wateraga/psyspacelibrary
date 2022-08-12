@@ -67,22 +67,29 @@ const FaqSection = () => {
             </Heading>
             <Text mt={2} color={"gray.500"}>
               Initally started as a subreddit{" "}
-              <Link href="https://reddit/r/pyspace" color={"#FF0080"}>
+              <Link
+                href="https://www.reddit.com/r/psyspace/"
+                isExternal
+                color={"#FF0080"}
+              >
                 r/psyspace
               </Link>{" "}
               a community to discuss about the modern use of psychedelics and
-              their integration in modern life, which is highly dependent upon
-              technology for almost everything and to find relation between
-              psychedelics and technology and how technology can help us better
-              understand the rational use of these substance, provide right
-              direction in science and therapy.
+              their integration in modern life and how technology can help us
+              better understand the rational use of these substance, build more
+              tools to promote harm reduction methods and for the betterment of
+              the human existence!
             </Text>
             <Text mt={1} color={"gray.500"}>
               My long term plans for this website are to turn it into a goto
               place for the psychonauts and everyone to seek guidance about
               their psychedelic journies, mental health, healing, help others,
               share their journeys, incentivize the learnings, learn proper harm
-              reduction tecniques and more.
+              reduction tecniques and more.{" "}
+              <Link href={"/library/home"} color={"#FF0080"}>
+                A library about psychedelics
+              </Link>{" "}
+              and everything about them.
             </Text>
           </Box>
           <Box textAlign={"left"} px={{ base: 2, md: 8 }}>
@@ -95,20 +102,21 @@ const FaqSection = () => {
             </Heading>
             <Text mt={2} color={"gray.500"}>
               The project has been build with{" "}
-              <Link href="https://reactjs.org" color={"#FF0080"}>
+              <Link href="https://reactjs.org" isExternal color={"#FF0080"}>
                 reactjs
               </Link>{" "}
-              is opensource and can be found on{" "}
+              it is an opensource library and can be found on{" "}
               <Link
                 href="https://github.com/dhashdev/psyspacelibrary"
                 color={"#FF0080"}
+                isExternal
               >
-                github
+                github.
               </Link>{" "}
               The project and the code is in vary nascent stage, the code
               quality and UI needs improvements and resources needs to be
-              updated to with new feature ofcourse, hence it can be buggy to
-              some extend, but that is where we need your help.
+              updated and new feature must be added ofcourse, hence it can be
+              buggy to some extend, but that is where we need your help.
             </Text>
           </Box>
           <Box textAlign={"left"} px={{ base: 2, md: 8 }}>
@@ -123,12 +131,16 @@ const FaqSection = () => {
               PsySpace Library does not make any money. I have been using my
               personal time and budget to build it. I did not create this
               website with any intentions of monetization but as a good will, to
-              help other people in their psychedelic journey and know all the
-              information requiered for harm reduction.
+              help other people in their own psychedelic journey, grow and know
+              all the information requiered for harm reduction.
             </Text>{" "}
             <Text>
               If you want to sponsor my efforts you can{" "}
-              <Link href="https://www.buymeacoffee.com/dhash" color={"#FF0080"}>
+              <Link
+                href="https://www.buymeacoffee.com/dhash"
+                isExternal
+                color={"#FF0080"}
+              >
                 Buy me a coffee
               </Link>{" "}
               or contact me at{" "}
@@ -152,6 +164,7 @@ const FaqSection = () => {
               <Link
                 href="https://github.com/dhashdev/psyspacelibrary"
                 color={"#FF0080"}
+                isExternal
               >
                 Github.
               </Link>{" "}
@@ -175,6 +188,7 @@ const FaqSection = () => {
                   Following on twitter{" "}
                   <Link
                     href="https://twitter.com/psyspacenetwork"
+                    isExternal
                     color={"#FF0080"}
                   >
                     @psyspacenetwork
@@ -185,6 +199,7 @@ const FaqSection = () => {
                   Becoming a member on{" "}
                   <Link
                     href="https://www.reddit.com/r/psyspace/"
+                    isExternal
                     color={"#FF0080"}
                   >
                     r/psyspace
@@ -208,7 +223,11 @@ const FaqSection = () => {
               <UnorderedList>
                 <ListItem>
                   twitter{" "}
-                  <Link href="https://twitter.com/dhashdev" color={"#FF0080"}>
+                  <Link
+                    href="https://twitter.com/dhashdev"
+                    isExternal
+                    color={"#FF0080"}
+                  >
                     @dhashdev
                   </Link>{" "}
                 </ListItem>
@@ -217,6 +236,7 @@ const FaqSection = () => {
                   reddit{" "}
                   <Link
                     href="https://www.reddit.com/message/compose?to=%2Fr%2Fpsyspace"
+                    isExternal
                     color={"#FF0080"}
                   >
                     r/psyspace
