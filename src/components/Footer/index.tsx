@@ -61,9 +61,6 @@ const ListHeader = ({ children }: { children: ReactNode }) => {
 
 const Footer = () => {
   const [email, setEmail] = useState(""); // form input state
-  const revueConfigValue: string = process.env
-    .REACT_APP_REVUE_PROFILE_NAME as string; // getting api end point from env
-  console.log(66, revueConfigValue);
   return (
     <Box
       bg={useColorModeValue("gray.50", "gray.900")}
@@ -112,7 +109,7 @@ const Footer = () => {
           <Stack align={"flex-start"}>
             <ListHeader>Stay up to date</ListHeader>
             <form
-              action={`${revueConfigValue}`}
+              action="https://www.getrevue.co/profile/PsySpace/add_subscriber"
               method="post"
               id="revue-form"
               name="revue-form"
