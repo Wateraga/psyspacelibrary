@@ -22,6 +22,7 @@ const Newsletter = () => {
   const revueConfigValue: string = process.env
     .REACT_APP_REVUE_PROFILE_NAME as string; // getting api end point from env
 
+  console.log(25, revueConfigValue);
   return (
     <Flex minH={"300"} align={"center"} justify={"center"}>
       <Container
