@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import React, { ReactNode, ChangeEvent, useState } from "react";
 import { Link } from "react-router-dom";
 import {
   Box,
@@ -60,6 +60,10 @@ const ListHeader = ({ children }: { children: ReactNode }) => {
 };
 
 const Footer = () => {
+  const [email, setEmail] = useState(""); // form input state
+  const revueConfigValue: string = process.env
+    .REACT_APP_REVUE_PROFILE_NAME as string; // getting api end point from env
+  console.log(66, revueConfigValue);
   return (
     <Box
       bg={useColorModeValue("gray.50", "gray.900")}
@@ -107,25 +111,46 @@ const Footer = () => {
           </Stack>
           <Stack align={"flex-start"}>
             <ListHeader>Stay up to date</ListHeader>
-            <Stack direction={"row"}>
-              <Input
-                placeholder={"Your email address"}
-                bg={useColorModeValue("blackAlpha.100", "whiteAlpha.100")}
-                border={0}
-                _focus={{
-                  bg: "whiteAlpha.300",
-                }}
-              />
-              <IconButton
-                bg={useColorModeValue("green.400", "green.800")}
-                color={useColorModeValue("white", "gray.800")}
-                _hover={{
-                  bg: "green.600",
-                }}
-                aria-label="Subscribe"
-                icon={<BiMailSend />}
-              />
-            </Stack>
+            <form
+              action={`${revueConfigValue}`}
+              method="post"
+              id="revue-form"
+              name="revue-form"
+              target="_blank"
+            >
+              <Stack direction={"row"}>
+                <Input
+                  placeholder={"Your email address"}
+                  bg={useColorModeValue("blackAlpha.100", "whiteAlpha.100")}
+                  border={0}
+                  _focus={{
+                    bg: "whiteAlpha.300",
+                  }}
+                  id="member_email"
+                  name="member[email]"
+                  type={"email"}
+                  required
+                  aria-label={"Your Email"}
+                  value={email}
+                  onChange={(e: ChangeEvent<HTMLInputElement>) =>
+                    setEmail(e.target.value)
+                  }
+                />
+                <IconButton
+                  bg={useColorModeValue("green.400", "green.800")}
+                  color={useColorModeValue("white", "gray.800")}
+                  _hover={{
+                    bg: "green.600",
+                  }}
+                  type="submit"
+                  value="Subscribe"
+                  name="member[subscribe]"
+                  id="member_submit"
+                  aria-label="Subscribe"
+                  icon={<BiMailSend />}
+                />
+              </Stack>
+            </form>
           </Stack>
         </SimpleGrid>
       </Container>
