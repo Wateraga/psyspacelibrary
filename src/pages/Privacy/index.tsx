@@ -5,7 +5,7 @@ import React from "react";
  * @component
  * @return {React.ReactComponentElement} terms page
  */
-const Terms = () => {
+const Privacy = () => {
   return (
     <>
       <Stack
@@ -20,4 +20,4 @@ const Terms = () => {
   );
 };
 
-export default Terms;
+export default Privacy;
