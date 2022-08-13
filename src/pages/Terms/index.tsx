@@ -26,6 +26,20 @@ const Terms = () => {
       <Stack spacing={{ base: 10, md: 20 }} py={{ base: 20, md: 28 }}>
         <Container maxW={"4xl"}>
           <Flex flexDirection={"column"} gap={8}>
+            <Heading>Disclaimer</Heading>
+            <Text>
+              PsySpace Library is a project of{" "}
+              <Link href="https://psyspace.in" color={"#FF0080"}>
+                psyspace
+              </Link>{" "}
+              a community made for pople trying to build tech base solution for
+              psychedelics spaces nor psyspace or psyspace library promote use
+              or consumtion of illegal substance in anyway, the sole purppose of
+              the project is to educate people and instill harm reduction
+              reduction value, the main aim of pysspace library is to have
+              resources related to education, science, harm reduction and mental
+              health.{" "}
+            </Text>
             <Heading> Terms & Conditions</Heading>
             <Text>
               {" "}

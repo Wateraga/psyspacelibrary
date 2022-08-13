@@ -9,13 +9,13 @@
     <a href="/">
      <img src="https://img.shields.io/badge/-psyspace%20-0a0a0a.svg?style=flat&colorA=0a0a0a" alt="psyspace" />
     </a> -->
-   
+
   </p>
 </p>
 
 <br>
 
-Library can be found on the link below.
+PsySpace Library is an open source project of [PsySpace](https://psyspace.in) and made purely for educational and harm reduction purposes, library can be found on the link below.
 
 ### [PsySpace Library](https://psyspacelibrary.in/)
 
@@ -43,3 +43,13 @@ npm run dev
 - Write tests
 - Discuss ideas in issues
 - Spread the word
+
+### Disclaimer
+
+PsySpace Library is a project of psyspace a community made for
+pople trying to build tech base solution for psychedelics spaces
+nor psyspace or psyspace library promote use or consumtion of
+illegal substance in anyway, the sole purppose of the project is
+to educate people and instill harm reduction reduction value, the
+main aim of pysspace library is to have resources related to
+education, science, harm reduction and mental health.
