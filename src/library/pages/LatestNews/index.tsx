@@ -14,7 +14,7 @@ import {
 } from "@chakra-ui/react";
 
 const LatestNews = () => {
-  const [news, setNews] = useState<psyNewsArticleShape | null>(null); // new post state
+  const [news, setNews] = useState<psyNewsArticleShape | null>(null); // news article state
   const [loading, setLoading]: [boolean, (loading: boolean) => void] =
     useState<boolean>(true); // loading state
   const [error, setError]: [boolean, (error: boolean) => void] =
