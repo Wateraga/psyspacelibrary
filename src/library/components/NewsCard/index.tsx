@@ -22,7 +22,7 @@ const NewsCard = ({
   return (
     <>
       <Flex
-        p={{ base: 2, md: 50 }}
+        p={{ base: 2, md: 5 }}
         w="full"
         alignItems="center"
         justifyContent="center"
@@ -32,7 +32,8 @@ const NewsCard = ({
           _dark={{ bg: "gray.800" }}
           mx={{ lg: 8 }}
           display={{ lg: "flex" }}
-          maxW={{ lg: "4xl" }}
+          maxW={{ md: "3xl" }}
+          maxH={{ md: "2xl" }}
           shadow={{ lg: "lg" }}
           rounded={{ base: "xl", lg: "lg" }}
         >
@@ -49,13 +50,13 @@ const NewsCard = ({
           </Box>
 
           <Box
-            py={12}
+            py={{ base: 2, md: 5 }}
             px={6}
             maxW={{ base: "xl", lg: "5xl" }}
             w={{ lg: "50%" }}
           >
             <chakra.h2
-              fontSize={{ base: "2xl", md: "3xl" }}
+              fontSize={{ base: "xl", md: "2xl" }}
               color="gray.800"
               _dark={{ color: "white" }}
               fontWeight="bold"
@@ -63,10 +64,10 @@ const NewsCard = ({
               {articleHeading}
             </chakra.h2>
             <chakra.p mt={4} color="gray.600" _dark={{ color: "gray.400" }}>
-              {articleBody}
+              {articleBody.substring(0, 100) + "..."}
             </chakra.p>
 
-            <Box mt={8}>
+            <Box mt={5}>
               <Flex justifyContent="space-between" direction="column">
                 <Link
                   bg="gray.900"
@@ -85,11 +86,7 @@ const NewsCard = ({
                 <Box mt={2}>
                   <Flex direction="column">
                     <Text fontSize="sm" color="grey" as="i">
-                      by:{" "}
-                      {articleAuthor
-                        ? articleAuthor
-                        : // .substring(0, articleAuthor.indexOf(","))
-                          "unknown"}
+                      by: {articleAuthor ? articleAuthor : "unknown"}
                     </Text>
                     <Text fontSize="sm" color="grey" as="i">
                       {moment(publishedAt).format("MMMM Do YYYY")}

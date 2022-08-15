@@ -13,7 +13,7 @@ const Guide = () => {
       />
       <Container maxW="4xl" my={{ base: 7, md: 5 }}>
         <Grid
-          templateColumns={{ base: "repeat(2, 1fr)", md: "repeat(3, 1fr)" }}
+          templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(3, 1fr)" }}
           gap={{ base: 2, md: 5 }}
         >
           {guideData.post.map((post) => {

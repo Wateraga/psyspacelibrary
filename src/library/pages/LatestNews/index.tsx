@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { getPsyNews, psyNewsArticleShape } from "../../../utils/api/news-api";
-import moment from "moment";
+// import moment from "moment";
 import NewsCard from "../../components/NewsCard";
 import SectionHeader from "../../components/SectionHeader";
 import {
@@ -19,14 +19,11 @@ const LatestNews = () => {
     useState<boolean>(true); // loading state
   const [error, setError]: [boolean, (error: boolean) => void] =
     useState(false);
-  const todayDate = moment().subtract(2, "days").format("YYYY/MM/DD"); // getting previous days date in requiered format
-  const configValue: string = process.env.REACT_APP_NEWS_API as string; // getting api end point from env
-  console.log(24, configValue);
   const toast = useToast(); // chakra ui toast to show error message
 
   useEffect(() => {
     // calling news api to get the latest news of today's date
-    getPsyNews(todayDate, configValue)
+    getPsyNews("psychedelics", 10)
       .then((data: psyNewsArticleShape) => {
         setNews(data as psyNewsArticleShape);
         setLoading(false);
@@ -46,7 +43,7 @@ const LatestNews = () => {
         });
       });
   }, []);
-
+  console.log("news", news);
   return (
     <>
       <SectionHeader
@@ -64,12 +61,12 @@ const LatestNews = () => {
           return (
             <>
               <NewsCard
-                imgUrl={post.urlToImage}
+                imgUrl={post.media}
                 articleHeading={post.title}
-                articleBody={post.description}
-                linkToArticle={post.url}
+                articleBody={post.summary}
+                linkToArticle={post.link}
                 articleAuthor={post.author}
-                publishedAt={post.publishedAt}
+                publishedAt={post.published_date}
               />
             </>
           );
