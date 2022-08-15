@@ -1,35 +1,46 @@
 // fetching latest psychedelic news from news api search paramenter
 
 import axios from "axios";
-// article response shape
 
+// article response shape
 export interface psyNewsArticleShape {
   status: string;
-  totalResults: number;
+  total_hits: number;
+  page: number;
+  total_pages: number;
+  page_size: number;
   articles: {
-    source: {
-      id: unknown;
-      name: string;
-    };
-    author: string;
+    _id: string;
     title: string;
-    description: string;
-    url: string;
-    urlToImage: string;
-    publishedAt: string;
-    content: string;
+    author: string;
+    link: string;
+    media: string;
+    published_date: string;
+    summary: string;
   }[];
 }
 /**
  *Takes two params
- * @param {date} date the first argument
- * @param {string} key the secong argument
+ * @param {string} searchParam search parameter
+ * @param {number} pageSize the secong argument
  * @return {object} list of news with psychedelic search query
  */
-export async function getPsyNews(date: string, key: string) {
-  //  👇️ const data: GetUsersResponse
+export async function getPsyNews(searchParam: string, pageSize: number) {
   const { data } = await axios.get<psyNewsArticleShape>(
-    `https://newsapi.org/v2/everything?q=psychedelics&from=${date}&sortBy=publishedAt&apiKey=${key}`
+    "https://free-news.p.rapidapi.com/v1/search",
+    {
+      params: {
+        q: `${searchParam}`,
+        lang: "en",
+        page: "1",
+        page_size: `${pageSize}`,
+      },
+
+      headers: {
+        "x-rapidapi-key": `${process.env.REACT_APP_NEWS_FREE_API}`,
+        "x-rapidapi-host": "free-news.p.rapidapi.com",
+      },
+    }
   );
   return data;
 }
