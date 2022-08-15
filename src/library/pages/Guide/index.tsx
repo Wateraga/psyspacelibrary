@@ -4,6 +4,10 @@ import guideData from "../../data/guide.json";
 import Card from "../../../library/components/Card";
 import SectionHeader from "../../../library/components/SectionHeader";
 
+/**
+ * @component
+ * @return {React.ReactElement} guide
+ */
 const Guide = () => {
   return (
     <>
