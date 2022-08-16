@@ -2,26 +2,22 @@
 # https://github.com/firebase/firebase-tools
 
 name: Deploy to Firebase Hosting on merge
-'on':
+"on":
   push:
     branches:
       - main
 env:
-  REACT_APP_API_KEY: ${{secrets.REACT_APP_NEWS_FREE_API}}
+  REACT_APP_API_KEY: "${{secrets.REACT_APP_NEWS_FREE_API}}"
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
     steps:
-    - name: create env file
-        run: 
-          touch .env
-          echo "${{ secrets.REACT_APP_API_KEY }}" >> .env
       - uses: actions/checkout@v2
       - run: npm install --force
-      - run : npm run build
+      - run: npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
-          repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_PSYSPACELIBRARY }}'
+          repoToken: "${{ secrets.GITHUB_TOKEN }}"
+          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_PSYSPACELIBRARY }}"
           channelId: live
           projectId: psyspacelibrary
