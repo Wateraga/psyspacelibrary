@@ -1,21 +1,99 @@
 {
-    "sectionHeading": "This is section heading",
-    "sectionHeadingDesc": "This is the heading of the section, which will describe what the particular guide section is about",
-    "post": [
+  "sectionHeading": "This section is for absolute beginner's",
+  "sectionHeadingDesc": "This section is for the psychonauts who are just getting into psychedelics and need some resource to get started and learn more 🏔️",
+  "post": [
+    {
+      "id": 1,
+      "postHeading": "Top Articles for new  psychonauts 📕",
+      "postBody": [
         {
-            "id": 1,
-            "postHeading": "This is post Heading 0",
-            "postBody": "this is post body containing small description"
+          "articleNumber": 0,
+          "articleName": "History of Psychedelics",
+          "articleLink": "https://juliablum.substack.com/p/this-weeks-travels-deconstructing?s=w"
         },
         {
-            "id": 1,
-            "postHeading": "This is post Heading 1",
-            "postBody": "this is post body containing small description"
+          "articleNumber": 1,
+          "articleName": "Why psychedelic journey are important for healing",
+          "articleLink": "https://juliablum.substack.com/p/this-weeks-travels-the-power-of-inner?s=w"
         },
         {
-            "id": 1,
-            "postHeading": "This is post Heading 2",
-            "postBody": "this is post body containing small description"
+          "articleNumber": 2,
+          "articleName": "How to know id you are ready for pyschedelic journey",
+          "articleLink": "https://juliablum.substack.com/p/6-signs-youre-ready-for-a-psychedelic?s=w"
+        },
+        {
+          "articleNumber": 3,
+          "articleName": "How to integrate your psychedelic journey",
+          "articleLink": "https://juliablum.substack.com/p/this-weeks-travels-psychedelic-integration?s=w"
+        },
+        {
+          "articleNumber": 4,
+          "articleName": "How to navigate challenging journeys",
+          "articleLink": "https://juliablum.substack.com/p/challenging-journeys?s=w"
         }
-    ]
+      ]
+    },
+    {
+      "id": 2,
+      "postHeading": "Top Audio-Visual Resources 🎥",
+      "postBody": [
+        {
+          "articleNumber": 0,
+          "articleName": "How to change your mind (netflix)",
+          "articleLink": "https://www.netflix.com/title/80229847"
+        },
+        {
+          "articleNumber": 1,
+          "articleName": "The Mind, Explained (netflix)",
+          "articleLink": "https://juliablum.substack.com/p/this-weeks-travels-the-power-of-inner?s=w"
+        },
+        {
+          "articleNumber": 2,
+          "articleName": "Neurons to Nirvana (prime)",
+          "articleLink": "https://www.amazon.com/Neurons-Nirvana-Understanding-Psychedelic-Medicines/dp/B00IZ3M8FO"
+        },
+        {
+          "articleNumber": 3,
+          "articleName": "Hamilton's Pharmacopis (hulu)",
+          "articleLink": "https://www.hulu.com/series/hamiltons-pharmacopeia-ba51f4e6-df48-4278-b75f-38f0d6ae6734?cmp=7958&utm_source=google&utm_medium=cpc&utm_campaign=BM+Search+TV+Shows&utm_term=&gclid=Cj0KCQiAqbyNBhC2ARIsALDwAsALLBolfk6vwvA5jwSxWgHLsoV6tGjX5_AYE7_eMuOMZSjHmSREDSUaAlBKEALw_wcB&gclsrc=aw.ds"
+        },
+        {
+          "articleNumber": 4,
+          "articleName": "becoming noboddy (prime)",
+          "articleLink": "https://www.amazon.com/Becoming-Nobody-Ram-Dass/dp/B086HCFNLB"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "postHeading": "Must Reads 📑",
+      "postBody": [
+        {
+          "articleNumber": 0,
+          "articleName": "'The Psychedelic Explorer's Guide' by James Fadiman",
+          "articleLink": "https://www.goodreads.com/book/show/9721527-the-psychedelic-explorer-s-guide?ac=1&from_search=true&qid=RMXJNO2H6j&rank=1"
+        },
+        {
+          "articleNumber": 1,
+          "articleName": "'The Way of the Psychonaut' by Stanislav Grof",
+          "articleLink": "https://www.goodreads.com/book/show/49997191-the-way-of-the-psychonaut-volume-one?ac=1&from_search=true&qid=gizK9q9jQZ&rank=1"
+        },
+        {
+          "articleNumber": 2,
+          "articleName": "LSD: My Problem Child by Dr. Albert hofmann",
+          "articleLink": "https://www.goodreads.com/book/show/8791.LSD?ac=1&from_search=true&qid=yp1WZz0pQo&rank=1"
+        },
+        {
+          "articleNumber": 3,
+          "articleName": "'A Really Good Day' by Ayelet Waldman",
+          "articleLink": "https://www.goodreads.com/book/show/30212082-a-really-good-day?ac=1&from_search=true&qid=YpJGt8AhE9&rank=3"
+        },
+        {
+          "articleNumber": 4,
+          "articleName": "The Doors of Perception / Heaven and Hell by Aldous Huxley",
+          "articleLink": "https://www.goodreads.com/book/show/5128.The_Doors_of_Perception_Heaven_and_Hell"
+        }
+      ]
+    }
+  ]
 }

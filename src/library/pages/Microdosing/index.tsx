@@ -18,7 +18,11 @@ const Microdosing = () => {
           {microdosingData.post.map((post) => {
             return (
               <GridItem key={post.postHeading}>
-                <Card cardHeading={post.postHeading} cardBody={post.postBody} />
+                <Card
+                  linkTo={post.link}
+                  cardHeading={post.postHeading}
+                  cardBody={post.postBody}
+                />
               </GridItem>
             );
           })}
