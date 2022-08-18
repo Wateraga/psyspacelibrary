@@ -7,21 +7,36 @@ import {
   AccordionItem,
   AccordionButton,
   AccordionPanel,
+  UnorderedList,
+  ListItem,
   AccordionIcon,
+  Link,
 } from "@chakra-ui/react";
 
+// Plan trip card types
 interface PlanTripCardTypes {
   stepName: string;
   stepNumber: number;
   stepDescription: string;
-  detailedDescription: string;
+  detailedDescription: {
+    pointNumber: number;
+    point: string;
+  }[];
+  reference: string;
+  referenceLink: string;
 }
-
+/**
+ *
+ * @component
+ * @return {React.ReactElement} plan trip single card
+ */
 const PlanTripCard = ({
   stepName,
   stepNumber,
   stepDescription,
   detailedDescription,
+  reference,
+  referenceLink,
 }: PlanTripCardTypes) => {
   return (
     <>
@@ -41,16 +56,30 @@ const PlanTripCard = ({
       <Box mt={2}>
         <Accordion allowMultiple>
           <AccordionItem>
-            <h2>
-              <AccordionButton>
-                <Box flex="1" textAlign="left">
-                  Tips for {stepName}
-                </Box>
-                <AccordionIcon />
-              </AccordionButton>
-            </h2>
+            <AccordionButton>
+              <Box flex="1" textAlign="left">
+                Tips for {stepName}
+              </Box>
+              <AccordionIcon />
+            </AccordionButton>
             <AccordionPanel pb={4} _dark={{ color: "#000" }}>
-              {detailedDescription}
+              <UnorderedList>
+                {detailedDescription.map((point) => {
+                  return (
+                    <Box key={point.pointNumber}>
+                      <ListItem>{point.point}</ListItem>
+                    </Box>
+                  );
+                })}
+              </UnorderedList>
+              <Box>
+                <Text>
+                  Reference:{" "}
+                  <Link isExternal href={`{${referenceLink}}`} color="#FF0080">
+                    {reference}
+                  </Link>
+                </Text>
+              </Box>
             </AccordionPanel>
           </AccordionItem>
         </Accordion>

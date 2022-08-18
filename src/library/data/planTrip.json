@@ -4,43 +4,247 @@
       "stepName": "Get Ready",
       "stepNumber": 0,
       "stepDescription": "First step is to get ready, both mentally and physically. This process should be started atleat a 7 to 10 days prior to your",
-      "detailedDescription": "do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamcolaboris nisi ut aliquip ex ea commodo consequat."
+      "detailedDescription": [
+        {
+          "pointNumber": 0,
+          "point": "Clean your surrounding"
+        },
+        {
+          "pointNumber": 2,
+          "point": "Refrain from or no drug user prior"
+        },
+        {
+          "pointNumber": 3,
+          "point": "Avoid high acid food, alcholo and sex"
+        },
+        {
+          "pointNumber": 4,
+          "point": "Get plenty of sleep"
+        },
+        {
+          "pointNumber": 5,
+          "point": "Avoid toxic situtation"
+        }
+      ],
+      "reference": "How to safe trip",
+      "referenceLink": "https://psyche.co/guides/how-to-have-a-safe-psychedelic-trip"
     },
     {
-      "stepName": "Get Ready",
+      "stepName": "Intention setting",
+      "stepNumber": 1,
+      "stepDescription": "Write down the intention of your trip on a blank page and keep it open if can, this is the anchor for your experience, whenever you feel overwhelmed or anxious.",
+      "detailedDescription": [
+        {
+          "pointNumber": 0,
+          "point": "You psychedelic experience should always have a reason"
+        },
+        {
+          "pointNumber": 1,
+          "point": "Spend some time to figure your intention out"
+        },
+        {
+          "pointNumber": 2,
+          "point": "Write it down on a paper, journal or notes"
+        },
+        {
+          "pointNumber": 3,
+          "point": "Look at it whenever you think it's time to work upon your intention"
+        }
+      ],
+      "reference": "How to set an intention",
+      "referenceLink": "https://www.vice.com/en/article/akg8ap/how-to-set-an-intention-for-your-drug-trip"
+    },
+    {
+      "stepName": "Dosage & Testing",
       "stepNumber": 2,
-      "stepDescription": "First step is to get ready, both mentally and physically. This process should be started atleat a 7 to 10 days prior to your",
-      "detailedDescription": "do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamcolaboris nisi ut aliquip ex ea commodo consequat."
+      "stepDescription": "It's one hundered percent important to test your medicine before ingesting, getting testing kit online and be sure about your dosage.",
+      "detailedDescription": [
+        {
+          "pointNumber": 0,
+          "point": "By a regint testing kit or whatever is easily available"
+        },
+        {
+          "pointNumber": 1,
+          "point": "Make sure you dose properly, especially for first timers"
+        }
+      ],
+      "reference": "Testing methods for LSD",
+      "referenceLink": "https://www.unodc.org/unodc/en/scientists/recommended-methods-for-testing-lysergide-lsd.html"
     },
     {
-      "stepName": "Get Ready",
+      "stepName": "No one like's Nausea",
       "stepNumber": 3,
-      "stepDescription": "First step is to get ready, both mentally and physically. This process should be started atleat a 7 to 10 days prior to your",
-      "detailedDescription": "do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamcolaboris nisi ut aliquip ex ea commodo consequat."
+      "stepDescription": "Keep something ready in case you feel nausea on come up usually not on acid, but sometimes on shrooms, green tea helps but you have to find your own anti-nausea. Can be a medicine too!",
+      "detailedDescription": [
+        {
+          "pointNumber": 0,
+          "point": "Keep some water, lemon or lime handy for come up"
+        },
+        {
+          "pointNumber": 1,
+          "point": "Fast few hours prior, if possible"
+        },
+        {
+          "pointNumber": 2,
+          "point": "Have light food for someday prior to the trip"
+        },
+        {
+          "pointNumber": 3,
+          "point": "Make shroom tea with some ginger"
+        }
+      ],
+      "reference": "How to reduce nausea thread",
+      "referenceLink": "https://www.reddit.com/r/shrooms/comments/1kgidt/need_way_to_reduce_nausea_from_shrooms/"
     },
     {
-      "stepName": "Get Ready",
+      "stepName": "We all love music!!",
       "stepNumber": 4,
-      "stepDescription": "First step is to get ready, both mentally and physically. This process should be started atleat a 7 to 10 days prior to your",
-      "detailedDescription": "do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamcolaboris nisi ut aliquip ex ea commodo consequat."
+      "stepDescription": "Music can be one of the best parts about tripping it can take you places you have never been too! (playlist section coming soon)",
+      "detailedDescription": [
+        {
+          "pointNumber": 0,
+          "point": "Make your playlist ready beforehand"
+        },
+        {
+          "pointNumber": 1,
+          "point": "Keep your phone fully charged"
+        },
+        {
+          "pointNumber": 2,
+          "point": "Headphone and speaker should be charged too"
+        },
+        {
+          "pointNumber": 3,
+          "point": "Explore new music (very important)"
+        }
+      ],
+      "reference": "Tripping playlist subreddit",
+      "referenceLink": "https://www.reddit.com/r/TrippingPlaylists/"
     },
     {
-      "stepName": "Get Ready",
+      "stepName": "Journal/ Recording",
       "stepNumber": 5,
-      "stepDescription": "First step is to get ready, both mentally and physically. This process should be started atleat a 7 to 10 days prior to your",
-      "detailedDescription": "do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamcolaboris nisi ut aliquip ex ea commodo consequat."
+      "stepDescription": "We all know it's deep psychological journey throug one's mind and you will forget most of it when you come down, hence record!",
+      "detailedDescription": [
+        {
+          "pointNumber": 0,
+          "point": "Keep a journal / notes app ready"
+        },
+        {
+          "pointNumber": 1,
+          "point": "Don't think you will remeber it, because you wont!"
+        },
+        {
+          "pointNumber": 2,
+          "point": "Voice recording is good too, if writing is difficult in altered states"
+        },
+        {
+          "pointNumber": 3,
+          "point": "Try to write as much as possible"
+        }
+      ],
+      "reference": "Reasons to journal while tripping",
+      "referenceLink": "https://www.wakefultravel.com/blogs/journal/7-reasons-why-you-need-a-psychedelic-integration-journal"
     },
     {
-      "stepName": "Get Ready",
+      "stepName": "SOS situation",
       "stepNumber": 6,
-      "stepDescription": "First step is to get ready, both mentally and physically. This process should be started atleat a 7 to 10 days prior to your",
-      "detailedDescription": "do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamcolaboris nisi ut aliquip ex ea commodo consequat."
+      "stepDescription": "In case of you are having a panic attack or you feel like you are loosing your mind, which is totally common and natural. Let some freind or someone know you'll be tripping!",
+      "detailedDescription": [
+        {
+          "pointNumber": 0,
+          "point": "Let the person know about your plans, so that they can be prepared too"
+        },
+        {
+          "pointNumber": 1,
+          "point": "Ask them to check on you in couple of hours in between"
+        },
+        {
+          "pointNumber": 2,
+          "point": "Having someone physically near or next door is great, especially for first timers"
+        },
+        {
+          "pointNumber": 3,
+          "point": "Reach out if needed, don't think, what they will think"
+        }
+      ],
+      "reference": "Help bad trip high",
+      "referenceLink": "https://sunrisehouse.com/cause-effect/help-bad-trip-high/"
     },
     {
-      "stepName": "Get Ready",
+      "stepName": "Have something to play",
       "stepNumber": 7,
-      "stepDescription": "First step is to get ready, both mentally and physically. This process should be started atleat a 7 to 10 days prior to your",
-      "detailedDescription": "do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamcolaboris nisi ut aliquip ex ea commodo consequat."
+      "stepDescription": "Colors, drawing book, bubble machine or whater is your thing, it can be exetremly intresting, have something to chew like gummy bears and something soft/ velvet type thing to touch, no specific reason, it's just feels awesome",
+      "detailedDescription": [
+        {
+          "pointNumber": 0,
+          "point": "Drawing is always fun, if you do that"
+        },
+        {
+          "pointNumber": 1,
+          "point": "Playing instrument, if you and if you can"
+        },
+        {
+          "pointNumber": 2,
+          "point": "Bubble machine can be fun"
+        },
+        {
+          "pointNumber": 3,
+          "point": "Anything that a 5 year old would love to play with"
+        }
+      ],
+      "reference": "Fun things to do while tripping thread",
+      "referenceLink": "https://www.reddit.com/r/Acid/comments/oknjvx/fun_things_to_do_while_tripping/"
+    },
+    {
+      "stepName": "Move that ass !!",
+      "stepNumber": 8,
+      "stepDescription": "Dance, headbang etc, whatever suits you, but please move your body while tripping try changing rooms if possible, moving the body while tripping helps release suppressed emotions, you are not baked, if you want you can be one hundred percent mobile and functional on psychedelics",
+      "detailedDescription": [
+        {
+          "pointNumber": 0,
+          "point": "Take a walk if possible"
+        },
+        {
+          "pointNumber": 1,
+          "point": "Dance it out!"
+        },
+        {
+          "pointNumber": 2,
+          "point": "Do stretching or yoga, thank us later!"
+        },
+        {
+          "pointNumber": 4,
+          "point": "Take a hot shower if possible"
+        },
+        {
+          "pointNumber": 5,
+          "point": "Anything to get in physical flow state"
+        }
+      ],
+      "reference": "Yoga and Psychedelics",
+      "referenceLink": "https://www.reddit.com/r/yoga/comments/26m1n9/psychedelics_yoga/"
+    },
+    {
+      "stepName": "Trust your self",
+      "stepNumber": 9,
+      "stepDescription": "You get the experience you need, not the experience you want, you decided to take this journey for a reason always remeber that reason when things get overwhelming! So just enjoy the ride and no matter how it feels, just say to yourself, 'this is exactly what I needed'. YES! even when it feels like you are dying, especially then!",
+      "detailedDescription": [
+        {
+          "pointNumber": 0,
+          "point": "You will be a different person after your experience, in a good way"
+        },
+        {
+          "pointNumber": 1,
+          "point": "This can be most profound experience of your life, hence enjoy each bit of it"
+        },
+        {
+          "pointNumber": 2,
+          "point": "Listen to Ram Dass, Terence McKenna and alan watts during or before trip"
+        }
+      ],
+      "reference": "Do it for yourslef!",
+      "referenceLink": "https://www.reddit.com/r/Psychedelics/comments/haf9jt/i_made_a_thing_about_heroic_doses/"
     }
   ]
 }

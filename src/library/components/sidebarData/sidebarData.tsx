@@ -12,8 +12,8 @@ interface LinkItemProps {
 }
 // Active options in side bar
 export const LinkItems: Array<LinkItemProps> = [
-  { name: "Plan your Trip", icon: FcPlanner, link: "/library/plan-your-trip" },
   { name: "Psychedelics", icon: TbMushroom, link: "/library/home" },
+  { name: "Plan your Trip", icon: FcPlanner, link: "/library/plan-your-trip" },
   {
     name: "Beginner's guide",
     icon: FiBook,

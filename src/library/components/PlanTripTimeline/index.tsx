@@ -1,5 +1,4 @@
 import React from "react";
-import { Box } from "@chakra-ui/react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -13,35 +12,35 @@ const planTripDataArray = planTripData.planTripSteps; // extracting array from t
 // plan trip
 const PlanTripTimeline = () => {
   return (
-    <Box>
-      <VerticalTimeline>
-        {planTripDataArray.map((step) => {
-          return (
-            <VerticalTimelineElement
-              key={step.stepNumber}
-              className="vertical-timeline-element--work"
-              iconStyle={{
-                background: "rgb(33, 150, 243)",
-                color: "#fff",
-              }}
-              icon={<BsFillBagCheckFill color="" />}
-            >
-              <PlanTripCard
-                stepName={step.stepName}
-                stepNumber={step.stepNumber}
-                stepDescription={step.stepDescription}
-                detailedDescription={step.detailedDescription}
-              />
-            </VerticalTimelineElement>
-          );
-        })}
+    <VerticalTimeline>
+      {planTripDataArray.map((step) => {
+        return (
+          <VerticalTimelineElement
+            key={step.stepNumber}
+            className="vertical-timeline-element--work"
+            iconStyle={{
+              background: "rgb(33, 150, 243)",
+              color: "#fff",
+            }}
+            icon={<BsFillBagCheckFill color="" />}
+          >
+            <PlanTripCard
+              stepName={step.stepName}
+              stepNumber={step.stepNumber}
+              stepDescription={step.stepDescription}
+              detailedDescription={step.detailedDescription}
+              reference={step.reference}
+              referenceLink={step.referenceLink}
+            />
+          </VerticalTimelineElement>
+        );
+      })}
 
-        <VerticalTimelineElement
-          iconStyle={{ background: "rgb(16, 204, 82)", color: "#fff" }}
-          icon={<FcPlanner />}
-        />
-      </VerticalTimeline>
-    </Box>
+      <VerticalTimelineElement
+        iconStyle={{ background: "rgb(16, 204, 82)", color: "#fff" }}
+        icon={<FcPlanner />}
+      />
+    </VerticalTimeline>
   );
 };
 
