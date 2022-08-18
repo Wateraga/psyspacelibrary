@@ -1,31 +1,31 @@
 {
-    "sectionHeading": "This is section heading",
-    "sectionHeadingDesc": "This is the heading of the section, which will describe what the particular guide section is about",
-    "post": [
-        {
-            "id": 1,
-            "postHeading": "This is post Heading",
-            "postBody": "this is post body containing small description"
-        },
-        {
-            "id": 1,
-            "postHeading": "This is post Heading",
-            "postBody": "this is post body containing small description"
-        },
-        {
-            "id": 1,
-            "postHeading": "This is post Heading",
-            "postBody": "this is post body containing small description"
-        },
-        {
-            "id": 1,
-            "postHeading": "This is post Heading",
-            "postBody": "this is post body containing small description"
-        },
-        {
-            "id": 1,
-            "postHeading": "This is post Heading",
-            "postBody": "this is post body containing small description"
-        }
-    ]
+  "sectionHeading": "Microdose Resources",
+  "sectionHeadingDesc": "Microdosing is one the new trend in psychedelics which is gaining alot of attention recently, no doubt it's one of most loved topic by new generation psychonauts",
+  "post": [
+    {
+      "id": 0,
+      "postHeading": "What is Micordosing",
+      "postBody": "Reddit r/microdosing wiki, one of the best resource",
+      "link": "https://www.reddit.com/r/microdosing/wiki/index/"
+    },
+    {
+      "id": 1,
+      "postHeading": "Microdosing 101",
+      "postBody": "Reddit r/microdosing 101 dicussion on every topic",
+      "link": "https://www.reddit.com/r/microdosing/search/?q=flair%3ADiscussion&t=all&sort=top&restrict_sr=on"
+    },
+    {
+      "id": 2,
+      "postHeading": "Benifits & Challenges",
+      "postBody": "A rearch covering benifts & challenges of microdoin",
+      "link": ""
+    },
+
+    {
+      "id": 3,
+      "postHeading": "Is microdsing safe?",
+      "postBody": "An article asswering some common concerns.",
+      "link": "https://oxfordtreatment.com/substance-abuse/microdosing/"
+    }
+  ]
 }

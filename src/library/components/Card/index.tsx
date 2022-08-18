@@ -5,7 +5,6 @@ import { AiOutlineLink } from "react-icons/ai";
 interface CardTypes {
   cardHeading: string;
   cardBody: string;
-  // !Remove optional mark for the link, it should be compulsory
   linkTo?: string;
 }
 

@@ -7,8 +7,8 @@ import { Step, Steps, useSteps } from "chakra-ui-steps";
 
 // number of steps with description
 const steps = [
-  { label: "Step 1", description: "Step 1 description" },
-  { label: "Step 2", description: "Step 2 description" },
+  { label: "Step 1", description: "Top Articles" },
+  { label: "Step 2", description: "Some Movies & Documentaries" },
   { label: "Step 3", description: "Step 3 description" },
 ];
 
@@ -53,7 +53,7 @@ const BeginGuide = () => {
         sectionHeading={beginGuideData.sectionHeading}
         sectionBody={beginGuideData.sectionHeadingDesc}
       />
-      <Container maxW="4xl" my={{ base: 7, md: 5 }}>
+      <Container maxW="4xl" my={{ base: 7, md: 2 }}>
         <Flex flexDir="column" width="100%">
           <Steps
             labelOrientation="horizontal"

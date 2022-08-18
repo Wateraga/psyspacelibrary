@@ -1,18 +1,22 @@
 import React from "react";
 import { Container } from "@chakra-ui/react";
-import beginGuideData from "../../data/beginGuide.json";
 import SectionHeader from "../../components/SectionHeader";
 import PlanTripTimeline from "../../components/PlanTripTimeline";
-// plan trip
+import planTripData from "../../data/planTrip.json";
+const planTripDataArray = planTripData.planTripSteps;
+/**
+ * @component
+ * @return {React.ReactElement} plan trip component
+ */
 const PlanTrip = () => {
   return (
     <>
       <SectionHeader
-        sectionHeading={beginGuideData.sectionHeading}
-        sectionBody={beginGuideData.sectionHeadingDesc}
+        sectionHeading={planTripData.planTripHeading}
+        sectionBody={planTripData.planTripBody}
       />
       <Container maxW="4xl" my={{ base: 7, md: 5 }}>
-        <PlanTripTimeline />
+        <PlanTripTimeline planTripDataArray={planTripDataArray} />
       </Container>
     </>
   );

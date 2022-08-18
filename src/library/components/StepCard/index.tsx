@@ -1,10 +1,21 @@
 import React from "react";
-import { Box, Text, chakra } from "@chakra-ui/react";
+import {
+  Box,
+  Text,
+  UnorderedList,
+  ListItem,
+  Link,
+  Flex,
+} from "@chakra-ui/react";
 
 // stepcard prop types
 interface StepCardTypes {
   stepHeading: string;
-  stepBody: string;
+  stepBody: {
+    articleNumber: number;
+    articleName: string;
+    articleLink: string;
+  }[];
 }
 const StepCard = ({ stepHeading, stepBody }: StepCardTypes) => {
   return (
@@ -20,18 +31,41 @@ const StepCard = ({ stepHeading, stepBody }: StepCardTypes) => {
         minW={{ base: "100%", md: "3xl" }}
       >
         <Box mt={2}>
-          <Text
-            fontSize="2xl"
-            fontWeight={600}
-            lineHeight={"110%"}
-            color="gray.700"
-            _dark={{ color: " #86FBFB" }}
-          >
-            {stepHeading}
-          </Text>
-          <chakra.p mt={2} color="gray.600" _dark={{ color: "gray.300" }}>
-            {stepBody}
-          </chakra.p>
+          <Flex flexDirection="column" alignItems="flex-start">
+            <Text
+              fontSize={{ base: "xl", md: "2xl" }}
+              textAlign="left"
+              fontWeight={600}
+              lineHeight={"110%"}
+              color="gray.700"
+              _dark={{ color: " #86FBFB" }}
+            >
+              {stepHeading}
+            </Text>
+            <Box
+              textAlign="left"
+              lineHeight="2"
+              mt={2}
+              color="gray.600"
+              _dark={{ color: "gray.300" }}
+            >
+              <UnorderedList>
+                {stepBody.map((article) => {
+                  return (
+                    <>
+                      <Link
+                        color="#FF0080"
+                        isExternal
+                        href={`{${article.articleLink}}`}
+                      >
+                        <ListItem>{article.articleName}</ListItem>
+                      </Link>
+                    </>
+                  );
+                })}
+              </UnorderedList>
+            </Box>
+          </Flex>
         </Box>
       </Box>
     </>

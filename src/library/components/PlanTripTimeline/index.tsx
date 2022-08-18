@@ -5,12 +5,29 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { FcPlanner } from "react-icons/fc";
-import { BsFillBagCheckFill } from "react-icons/bs";
+import { AiFillCheckCircle } from "react-icons/ai";
 import PlanTripCard from "./PlanTripCard";
-import planTripData from "../../data/planTrip.json";
-const planTripDataArray = planTripData.planTripSteps; // extracting array from trip data
-// plan trip
-const PlanTripTimeline = () => {
+
+// plan trip types
+interface planTripTypes {
+  planTripDataArray: {
+    stepName: string;
+    stepNumber: number;
+    stepDescription: string;
+    detailedDescription: {
+      pointNumber: number;
+      point: string;
+    }[];
+    reference: string;
+    referenceLink: string;
+  }[];
+}
+
+/**
+ * @component
+ * @return {React.ReactElement} plan trip timeline
+ */
+const PlanTripTimeline = ({ planTripDataArray }: planTripTypes) => {
   return (
     <VerticalTimeline>
       {planTripDataArray.map((step) => {
@@ -19,10 +36,10 @@ const PlanTripTimeline = () => {
             key={step.stepNumber}
             className="vertical-timeline-element--work"
             iconStyle={{
-              background: "rgb(33, 150, 243)",
+              background: "#86FBFB",
               color: "#fff",
             }}
-            icon={<BsFillBagCheckFill color="" />}
+            icon={<AiFillCheckCircle color="" />}
           >
             <PlanTripCard
               stepName={step.stepName}
