@@ -3,6 +3,7 @@ import { TbMushroom } from "react-icons/tb";
 import { GiPill } from "react-icons/gi";
 import { BiNews } from "react-icons/bi";
 import { IconType } from "react-icons";
+import { FcPlanner } from "react-icons/fc";
 
 interface LinkItemProps {
   name: string;
@@ -12,6 +13,7 @@ interface LinkItemProps {
 // Active options in side bar
 export const LinkItems: Array<LinkItemProps> = [
   { name: "Psychedelics", icon: TbMushroom, link: "/library/home" },
+  { name: "Plan your Trip", icon: FcPlanner, link: "/library/plan-your-trip" },
   {
     name: "Beginner's guide",
     icon: FiBook,

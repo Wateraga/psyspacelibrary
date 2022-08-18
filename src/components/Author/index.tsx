@@ -56,7 +56,7 @@ const Author = () => {
               >
                 <Box>
                   {" "}
-                  <Link href="https://twitter.com/dhashdev">
+                  <Link isExternal href="https://twitter.com/dhashdev">
                     <Button
                       w={"full"}
                       maxW={180}

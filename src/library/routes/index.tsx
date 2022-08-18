@@ -5,6 +5,7 @@ import Guide from "../pages/Guide";
 import BeginGuide from "../pages/BeginGuide";
 import LatestNews from "../pages/LatestNews";
 import Microdosing from "../pages/Microdosing";
+import PlanTrip from "../pages/PlanTrip";
 const Library = () => {
   return (
     <>
@@ -14,6 +15,7 @@ const Library = () => {
           <Route path="beginners-guide" element={<BeginGuide />} />
           <Route path="latest-news" element={<LatestNews />} />
           <Route path="microdosing" element={<Microdosing />} />
+          <Route path="plan-your-trip" element={<PlanTrip />} />
         </Routes>
       </Sidebar>
     </>

@@ -231,7 +231,16 @@ const FaqSection = () => {
                     @dhashdev
                   </Link>{" "}
                 </ListItem>
-
+                <ListItem>
+                  PsySpace twitter{" "}
+                  <Link
+                    href="https://twitter.com/psyspacenetwork"
+                    isExternal
+                    color={"#FF0080"}
+                  >
+                    @psyspacenetwork
+                  </Link>{" "}
+                </ListItem>
                 <ListItem>
                   reddit{" "}
                   <Link

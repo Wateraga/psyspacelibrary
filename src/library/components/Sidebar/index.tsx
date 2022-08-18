@@ -22,7 +22,7 @@ import { FiMenu } from "react-icons/fi";
 import { TbArrowLeft } from "react-icons/tb";
 import { Link as Linkk } from "react-router-dom";
 import { IconType } from "react-icons";
-import { LinkItems } from "../../sidebarData/sidebarData";
+import { LinkItems } from "../sidebarData/sidebarData";
 import PsySpaceLogo from "../../../assests/images/PsySpace-text-log-350x60.png";
 const Sidebar = ({ children }: { children: React.ReactNode }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
