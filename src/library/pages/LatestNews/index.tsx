@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { getPsyNews, psyNewsArticleShape } from "../../../utils/api/news-api";
-// import moment from "moment";
 import NewsCard from "../../components/NewsCard";
 import SectionHeader from "../../components/SectionHeader";
 import {
@@ -43,7 +42,6 @@ const LatestNews = () => {
         });
       });
   }, []);
-  console.log("news", news);
   return (
     <>
       <SectionHeader
@@ -59,7 +57,7 @@ const LatestNews = () => {
       ) : loading === false && error === false ? (
         news?.articles?.map((post) => {
           return (
-            <>
+            <Box key={post._id}>
               <NewsCard
                 imgUrl={post.media}
                 articleHeading={post.title}
@@ -68,7 +66,7 @@ const LatestNews = () => {
                 articleAuthor={post.author}
                 publishedAt={post.published_date}
               />
-            </>
+            </Box>
           );
         })
       ) : (
