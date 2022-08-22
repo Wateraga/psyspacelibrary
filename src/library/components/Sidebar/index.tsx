@@ -15,6 +15,7 @@ import {
   useColorMode,
   Button,
   Image,
+  Divider,
 } from "@chakra-ui/react";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 import { FiMenu } from "react-icons/fi";
@@ -23,6 +24,14 @@ import { Link as Linkk } from "react-router-dom";
 import { IconType } from "react-icons";
 import { LinkItems } from "../sidebarData/sidebarData";
 import PsySpaceLogo from "../../../assests/images/PsySpace-text-log-350x60.png";
+import ComingSoonSidebar from "../ComingSoonSidebar";
+import { ComingSoonItems } from "../sidebarData/sidebarData";
+
+/**
+ *
+ * @component
+ * @return {ReactElement} sidebar (library index)
+ */
 const Sidebar = ({ children }: { children: React.ReactNode }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
@@ -105,9 +114,33 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
           </NavItem>
         </Linkk>
       ))}
-      <Button onClick={toggleColorMode}>
-        {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
-      </Button>
+      <Divider />
+      <Flex flexDirection="column" mt={4}>
+        <Box textAlign={"center"}>
+          <Text fontSize={{ base: "lg", md: "lg" }} fontWeight={"bold"}>
+            Coming Soon !!
+          </Text>
+        </Box>
+        <Box>
+          {ComingSoonItems.map((link) => (
+            <ComingSoonSidebar icon={link.icon} key={link.name}>
+              {link.name}
+            </ComingSoonSidebar>
+          ))}
+        </Box>
+      </Flex>
+
+      <Divider />
+      <Flex justifyContent={"space-evenly"} my={4}>
+        <Button onClick={toggleColorMode}>
+          {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
+        </Button>
+        <Box mt={2}>
+          <Text color={"gray.500"} fontSize={{ base: "lg", md: "md" }}>
+            Switch to {colorMode === "light" ? <>Dark</> : <>Light</>} mode
+          </Text>
+        </Box>
+      </Flex>
     </Box>
   );
 };

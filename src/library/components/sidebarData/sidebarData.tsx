@@ -1,9 +1,11 @@
-import { FiHome, FiBook } from "react-icons/fi";
-import { TbMushroom } from "react-icons/tb";
+import { FiBook } from "react-icons/fi";
+import { TbMushroom, TbReportAnalytics } from "react-icons/tb";
 import { GiPill } from "react-icons/gi";
-import { BiNews } from "react-icons/bi";
+import { BiNews, BiMoviePlay } from "react-icons/bi";
 import { IconType } from "react-icons";
 import { FcPlanner } from "react-icons/fc";
+import { AiOutlineMail } from "react-icons/ai";
+import { BsMusicNoteBeamed } from "react-icons/bs";
 
 interface LinkItemProps {
   name: string;
@@ -35,19 +37,19 @@ interface ComingSoonTypes {
 // Coming soon options in side bar
 export const ComingSoonItems: Array<ComingSoonTypes> = [
   {
-    name: "Newsletters",
-    icon: FiHome,
+    name: "Top Newsletters",
+    icon: AiOutlineMail,
   },
   {
-    name: "Newsletters",
-    icon: FiHome,
+    name: "Best Music",
+    icon: BsMusicNoteBeamed,
   },
   {
-    name: "Newsletters",
-    icon: FiHome,
+    name: "Top Movies",
+    icon: BiMoviePlay,
   },
   {
-    name: "Newsletters",
-    icon: FiHome,
+    name: "Best Trip Reports",
+    icon: TbReportAnalytics,
   },
 ];
