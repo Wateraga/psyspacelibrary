@@ -60,9 +60,15 @@ const OpensourceBanner = () => {
                   Contribute
                 </Button>
               </Link>
-              <Button rounded={"full"} width={{ base: "40", md: "60" }} px={6}>
-                Submit a Resouce
-              </Button>
+              <Link href="https://forms.gle/7n2nMKkwM8bazWfi9" isExternal>
+                <Button
+                  rounded={"full"}
+                  width={{ base: "40", md: "60" }}
+                  px={6}
+                >
+                  Submit a Resouce
+                </Button>
+              </Link>
             </Stack>
           </Stack>
         </Box>
