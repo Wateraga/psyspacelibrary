@@ -74,7 +74,7 @@ const PlanTripCard = ({
               <Box>
                 <Text>
                   Reference:{" "}
-                  <Link isExternal href={`{${referenceLink}}`} color="#FF0080">
+                  <Link isExternal href={`${referenceLink}`} color="#FF0080">
                     {reference}
                   </Link>
                 </Text>
