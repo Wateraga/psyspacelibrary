@@ -6,7 +6,6 @@ import {
   Flex,
   Icon,
   useColorModeValue,
-  Link,
   Drawer,
   DrawerContent,
   Text,
@@ -101,7 +100,7 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
       </Flex>
       {LinkItems.map((link) => (
         <Linkk to={link.link} key={link.name}>
-          <NavItem icon={link.icon} link={link.link} onClick={onClose}>
+          <NavItem icon={link.icon} onClick={onClose}>
             {link.name}
           </NavItem>
         </Linkk>
@@ -109,24 +108,6 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
       <Button onClick={toggleColorMode}>
         {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
       </Button>
-      {/* <Box w="100%" backgroundColor={"grey"} mt={4} h={8}>
-        <Flex justifyContent={"center"}>
-          <Text color={"black"} mt={1}>
-            Coming Soon
-          </Text>
-        </Flex>
-        <Box mt={5}>
-          {ComingSoonItems.map((link) => (
-            <ComingSoonNavItem
-              icon={link.icon}
-              key={link.name}
-              onClick={onClose}
-            >
-              {link.name}
-            </ComingSoonNavItem>
-          ))}
-        </Box>
-      </Box> */}
     </Box>
   );
 };
@@ -134,80 +115,36 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
 interface NavItemProps extends FlexProps {
   icon: IconType;
   children: ReactNode;
-  link: string;
 }
 const NavItem = ({ icon, children, ...rest }: NavItemProps) => {
   return (
-    <Link style={{ textDecoration: "none" }} _focus={{ boxShadow: "none" }}>
-      <Flex
-        align="center"
-        p="4"
-        mx="4"
-        borderRadius="lg"
-        role="group"
-        cursor="pointer"
-        _hover={{
-          bg: "#86FBFB",
-          color: "black",
-        }}
-        {...rest}
-      >
-        {icon && (
-          <Icon
-            mr="4"
-            fontSize="16"
-            _groupHover={{
-              color: "black",
-            }}
-            as={icon}
-          />
-        )}
-        {children}
-      </Flex>
-    </Link>
+    <Flex
+      align="center"
+      p="4"
+      mx="4"
+      borderRadius="lg"
+      role="group"
+      cursor="pointer"
+      _hover={{
+        bg: "#86FBFB",
+        color: "black",
+      }}
+      {...rest}
+    >
+      {icon && (
+        <Icon
+          mr="4"
+          fontSize="16"
+          _groupHover={{
+            color: "black",
+          }}
+          as={icon}
+        />
+      )}
+      {children}
+    </Flex>
   );
 };
-
-// //nav items coming soo
-// interface ComingSoonNavItemProps extends FlexProps {
-//   icon: IconType;
-//   children: ReactNode;
-// }
-// const ComingSoonNavItem = ({
-//   icon,
-//   children,
-//   ...rest
-// }: ComingSoonNavItemProps) => {
-//   return (
-//     <Link style={{ textDecoration: "none" }} _focus={{ boxShadow: "none" }}>
-//       <Flex
-//         align="center"
-//         p="4"
-//         mx="4"
-//         borderRadius="lg"
-//         role="group"
-//         cursor="pointer"
-//         _hover={{
-//           bg: "grey",
-//           color: "black",
-//         }}
-//         {...rest}
-//       >
-//         {icon && (
-//           <Icon
-//             mr="4"
-//             fontSize="16"
-//             _groupHover={{
-//               color: "black",
-//             }}
-//             as={icon}
-//           />
-//         )}
-//         {children}
-//       </Flex>
-//     </Link>
-//   );
-// };
 
 interface MobileProps extends FlexProps {
   onOpen: () => void;

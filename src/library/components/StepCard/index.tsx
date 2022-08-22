@@ -52,7 +52,7 @@ const StepCard = ({ stepHeading, stepBody }: StepCardTypes) => {
               <UnorderedList>
                 {stepBody.map((article) => {
                   return (
-                    <>
+                    <Box key={article.articleNumber}>
                       <Link
                         color="#FF0080"
                         isExternal
@@ -60,7 +60,7 @@ const StepCard = ({ stepHeading, stepBody }: StepCardTypes) => {
                       >
                         <ListItem>{article.articleName}</ListItem>
                       </Link>
-                    </>
+                    </Box>
                   );
                 })}
               </UnorderedList>
