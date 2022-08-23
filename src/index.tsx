@@ -4,6 +4,7 @@ import App from "./App";
 import { BrowserRouter } from "react-router-dom";
 import { ChakraProvider, ColorModeScript } from "@chakra-ui/react";
 import theme from "./theme";
+import * as servicerWorkerRegisteration from "./serviceWorkerRegistration";
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
@@ -15,3 +16,5 @@ root.render(
     </ChakraProvider>
   </BrowserRouter>
 );
+
+servicerWorkerRegisteration.register();
