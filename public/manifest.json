@@ -1,7 +1,8 @@
 {
   "name": "PsySpace library",
   "short_name": "PsySpace Lirary",
-  "start_url": "index.html",
+  "start_url": "./",
+  "scope": ".",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff",
