@@ -8,14 +8,29 @@
       "type": "image/x-icon"
     },
     {
+      "src": "PsySpace-logo-144.png",
+      "sizes": "144x144",
+      "type": "image/x-icon",
+      "purpose": "any"
+    },
+    {
       "src": "PsySpace_192-removebg-preview.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "192x192",
+      "purpose": "any"
     },
     {
       "src": "PsySpace-logo-512x512-removebg-preview.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "512x512",
+      "purpose": "any"
+    },
+
+    {
+      "src": "maskable_icon.png",
+      "type": "image/png",
+      "sizes": "96x96 128x128 192x192 512x512",
+      "purpose": "maskable"
     }
   ],
   "start_url": ".",
