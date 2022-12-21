@@ -1,5 +1,7 @@
 import { FiBook } from "react-icons/fi";
-import { TbMushroom, TbReportAnalytics } from "react-icons/tb";
+import { TbMushroom } from "react-icons/tb";
+import { TbReportAnalytics } from "react-icons/tb";
+
 import { GiPill } from "react-icons/gi";
 import { BiNews, BiMoviePlay } from "react-icons/bi";
 import { IconType } from "react-icons";

@@ -76,13 +76,11 @@ const Home = () => {
                 Go to Library
               </Button>
             </Link>
-            <Button
-              rounded={"full"}
-              px={6}
-              onClick={() => window.location.replace("/#about")}
-            >
-              Learn more
-            </Button>
+            <Link to="/faq">
+              <Button rounded={"full"} px={6}>
+                Learn more
+              </Button>
+            </Link>
           </Stack>
           {isDesktop ? (
             <Flex w={"full"}>
