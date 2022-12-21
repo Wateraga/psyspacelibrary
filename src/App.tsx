@@ -1,6 +1,7 @@
 //  app entry
-import React from "react";
+import React, { Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
+import Loader from "./components/Loader";
 import Library from "./library/routes";
 import MainLayout from "./routes/MainLayout";
 /**
@@ -10,10 +11,12 @@ import MainLayout from "./routes/MainLayout";
 function App() {
   return (
     <>
-      <Routes>
-        <Route path="/*" element={<MainLayout />} />
-        <Route path="/library/*" element={<Library />} />
-      </Routes>
+      <Suspense fallback={<Loader />}>
+        <Routes>
+          <Route path="/*" element={<MainLayout />} />
+          <Route path="/library/*" element={<Library />} />
+        </Routes>
+      </Suspense>
     </>
   );
 }

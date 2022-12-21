@@ -1,10 +1,19 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
-import Home from "../pages/Home";
-import Layout from "../components/Layout";
-import Faq from "../pages/Faq";
-import Privacy from "../pages/Privacy";
-import Terms from "../pages/Terms";
+const Home = lazy(() => import("../pages/Home"));
+const Layout = lazy(() => import("../components/Layout"));
+const Faq = lazy(() => import("../pages/Faq"));
+const Privacy = lazy(() => import("../pages/Privacy"));
+const Terms = lazy(() => import("../pages/Terms"));
+// const Loader = lazy(() => import("../components/Loader"));
+const NotFound = lazy(() => import("../pages/NotFound"));
+import Loader from "../components/Loader";
+// import NotFound from "../pages/NotFound";
+// import Layout from "../components/Layout";
+// import Home from "../pages/Home";
+// import Faq from "../pages/Faq";
+// import Terms from "../pages/Terms";
+// import Privacy from "../pages/Privacy";
 /**
  * Component for rendering main routes.
  *
@@ -14,14 +23,17 @@ import Terms from "../pages/Terms";
 function MainLayout() {
   return (
     <>
-      <Layout>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/faq" element={<Faq />} />{" "}
-          <Route path="/terms" element={<Terms />} />{" "}
-          <Route path="/privacy" element={<Privacy />} />
-        </Routes>
-      </Layout>
+      <Suspense fallback={<Loader />}>
+        <Layout>
+          <Routes>
+            <Route path="*" element={<NotFound />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/faq" element={<Faq />} />{" "}
+            <Route path="/terms" element={<Terms />} />{" "}
+            <Route path="/privacy" element={<Privacy />} />
+          </Routes>
+        </Layout>
+      </Suspense>
     </>
   );
 }

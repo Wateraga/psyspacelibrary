@@ -13,7 +13,10 @@ import {
   IconButton,
   useColorModeValue,
 } from "@chakra-ui/react";
-import { FaGlobe, FaReddit, FaTwitter } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaGlobe } from "react-icons/fa";
+import { FaReddit } from "react-icons/fa";
+
 import { BiMailSend } from "react-icons/bi";
 import PsySpaceLogo from "../../assests/images/PsySpace-text-log-350x60.png";
 

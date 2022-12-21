@@ -10,7 +10,9 @@ import {
   Link,
   Container,
 } from "@chakra-ui/react";
-import { AiFillTwitterCircle, AiOutlineMail } from "react-icons/ai";
+import { AiFillTwitterCircle } from "react-icons/ai";
+import { AiOutlineMail } from "react-icons/ai";
+
 import AuthorAvart from "../../assests/images/author_avatar.jpg";
 
 /**
