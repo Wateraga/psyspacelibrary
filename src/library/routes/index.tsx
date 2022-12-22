@@ -11,7 +11,7 @@ import Loader from "../../components/Loader";
 const Guide = lazy(() => import("../pages/Guide"));
 const NotFound = lazy(() => import("../../pages/NotFound"));
 const BeginGuide = lazy(() => import("../pages/BeginGuide"));
-const LatestNews = lazy(() => import("../pages/Microdosing"));
+const LatestNews = lazy(() => import("../pages/LatestNews"));
 const Microdosing = lazy(() => import("../pages/Microdosing"));
 const PlanTrip = lazy(() => import("../pages/PlanTrip"));
 // const Loader = lazy(() => import("../../components/Loader"));
