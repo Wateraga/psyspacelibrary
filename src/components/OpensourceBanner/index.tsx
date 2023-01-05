@@ -16,7 +16,7 @@ const OpensourceBanner = () => {
         <Heading fontSize={"4xl"} fontWeight={800}>
           Open Source
         </Heading>
-        <Text color={"gray.600"} fontSize={{ md: "xl" }}>
+        <Text fontSize={{ md: "xl" }}>
           This project is OpenSource, if you like the project please take a
           momemt to star it on Github via link below, this would help the
           project to grow!
@@ -35,11 +35,11 @@ const OpensourceBanner = () => {
                 Star on Github
               </Button>
             </Link>
-            <Text color={"gray.600"} fontSize={{ md: "xl" }}>
+            <Text fontSize={{ md: "xl" }}>
               The project is actively looking for contributors hence if you are
               a developer and would like to contribute in any way, you are most
-              welcome! General audience can submit resource suggestions too from
-              link below.
+              welcome! General audience can submit resource suggestions as well
+              from link below.
             </Text>
             <Stack
               direction={{ base: "column", md: "row" }}

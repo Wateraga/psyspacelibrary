@@ -1,23 +1,22 @@
-import React, { ReactNode, ChangeEvent, useState } from "react";
+import React, { ReactNode } from "react";
 import { Link } from "react-router-dom";
 import {
   Box,
   chakra,
   Container,
   SimpleGrid,
+  Link as Linkk,
   Stack,
   Text,
   VisuallyHidden,
-  Input,
+  Button,
   Image,
-  IconButton,
   useColorModeValue,
 } from "@chakra-ui/react";
 import { FaTwitter } from "react-icons/fa";
 import { FaGlobe } from "react-icons/fa";
 import { FaReddit } from "react-icons/fa";
 
-import { BiMailSend } from "react-icons/bi";
 import PsySpaceLogo from "../../assests/images/PsySpace-text-log-350x60.png";
 
 //  Social media button component
@@ -63,7 +62,7 @@ const ListHeader = ({ children }: { children: ReactNode }) => {
 };
 
 const Footer = () => {
-  const [email, setEmail] = useState(""); // form input state
+  // const [email, setEmail] = useState(""); // form input state
   return (
     <Box
       bg={useColorModeValue("gray.50", "gray.900")}
@@ -111,46 +110,18 @@ const Footer = () => {
           </Stack>
           <Stack align={"flex-start"}>
             <ListHeader>Stay up to date</ListHeader>
-            <form
-              action="https://www.getrevue.co/profile/PsySpace/add_subscriber"
-              method="post"
-              id="revue-form"
-              name="revue-form"
-              target="_blank"
-            >
-              <Stack direction={"row"}>
-                <Input
-                  placeholder={"Your email address"}
-                  bg={useColorModeValue("blackAlpha.100", "whiteAlpha.100")}
-                  border={0}
-                  _focus={{
-                    bg: "whiteAlpha.300",
-                  }}
-                  id="member_email"
-                  name="member[email]"
-                  type={"email"}
-                  required
-                  aria-label={"Your Email"}
-                  value={email}
-                  onChange={(e: ChangeEvent<HTMLInputElement>) =>
-                    setEmail(e.target.value)
-                  }
-                />
-                <IconButton
-                  bg={useColorModeValue("green.400", "green.800")}
-                  color={useColorModeValue("white", "gray.800")}
-                  _hover={{
-                    bg: "green.600",
-                  }}
-                  type="submit"
-                  value="Subscribe"
-                  name="member[subscribe]"
-                  id="member_submit"
-                  aria-label="Subscribe"
-                  icon={<BiMailSend />}
-                />
-              </Stack>
-            </form>
+
+            <Box>
+              <Linkk href="https://psyspace.substack.com/" isExternal>
+                <Button
+                  colorScheme="teal"
+                  variant="solid"
+                  textDecoration={"none"}
+                >
+                  Subscribe to PsySpace Newsletter
+                </Button>
+              </Linkk>
+            </Box>
           </Stack>
         </SimpleGrid>
       </Container>

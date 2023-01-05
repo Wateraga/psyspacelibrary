@@ -59,10 +59,10 @@ const Home = () => {
               PsySpace Library
             </Text>
           </Heading>
-          <Text color={"gray.500"} maxW={"3xl"} fontSize={{ md: "2xl" }}>
+          <Text maxW={"3xl"} fontSize={{ md: "2xl" }}>
             PsySpace presents psyspace library, an opensource community driven
-            project to bring curated resouces from all around the web about
-            psychedelics and psychedelic use
+            project created to bring curated resources from all around the web
+            about psychedelics and mental health
           </Text>
           <Stack spacing={6} direction={"row"}>
             <Link to="/library/home">

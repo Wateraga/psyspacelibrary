@@ -36,10 +36,10 @@ const About = () => {
           </Text>{" "}
           Library
         </Heading>
-        <Text color={"gray.600"} fontSize={{ md: "2xl" }}>
-          PsySpace library aims to provides you with all the latest and up to
-          date resources to learn and educate yourself about the sensible use of
-          psychedelics
+        <Text fontSize={{ md: "2xl" }}>
+          PsySpace library aims to provides you with the latest and quality
+          resources so that you can learn and educate yourself about the
+          sensible use of psychedelics
         </Text>
       </Stack>
 
@@ -60,8 +60,10 @@ const About = () => {
                   <Icon as={TbMushroom} w={6} h={6} />
                 </Box>
                 <VStack align={"start"}>
-                  <Text fontWeight={600}>{feature.title}</Text>
-                  <Text color={"gray.600"}>{feature.text}</Text>
+                  <Text fontWeight={600} fontSize={16}>
+                    {feature.title}
+                  </Text>
+                  <Text>{feature.text}</Text>
                 </VStack>
               </HStack>
             </Link>
