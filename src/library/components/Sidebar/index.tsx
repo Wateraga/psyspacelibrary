@@ -16,6 +16,8 @@ import {
   Button,
   Image,
   Divider,
+  Stack,
+  Center,
 } from "@chakra-ui/react";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 import { FiMenu } from "react-icons/fi";
@@ -26,6 +28,11 @@ import { LinkItems } from "../sidebarData/sidebarData";
 import PsySpaceLogo from "../../../assests/images/PsySpace-text-log-350x60.png";
 import ComingSoonSidebar from "../ComingSoonSidebar";
 import { ComingSoonItems } from "../sidebarData/sidebarData";
+import SocialButton from "../SocialButton";
+import { FaTwitter } from "react-icons/fa";
+import { FaGlobe } from "react-icons/fa";
+import { FaReddit } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 
 /**
  *
@@ -114,7 +121,9 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
           </NavItem>
         </Linkk>
       ))}
-      <Divider />
+      <Box mt="2">
+        <Divider />
+      </Box>
       <Flex flexDirection="column" mt={4}>
         <Box textAlign={"center"}>
           <Text fontSize={{ base: "lg", md: "lg" }} fontWeight={"bold"}>
@@ -131,7 +140,7 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
       </Flex>
 
       <Divider />
-      <Flex justifyContent={"space-evenly"} my={4}>
+      <Flex justifyContent={"center"} my={4} gap={3}>
         <Button onClick={toggleColorMode}>
           {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
         </Button>
@@ -141,6 +150,40 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
           </Text>
         </Box>
       </Flex>
+      <Center>
+        <Box mt={2}>
+          <Flex flexDirection="column" alignItems={"center"} gap="2">
+            <Box>
+              <Text fontSize={"md"}>Other Virtual Existences</Text>
+            </Box>
+            <Stack direction={"row"} spacing={2}>
+              <SocialButton
+                label={"reddit"}
+                href={"https://www.reddit.com/r/psyspace/"}
+              >
+                <FaReddit />
+              </SocialButton>
+
+              <SocialButton label={"website"} href={"https://psyspace.in"}>
+                <FaGlobe />
+              </SocialButton>
+
+              <SocialButton
+                label={"website"}
+                href={"https://twitter.com/psyspacenetwork"}
+              >
+                <FaTwitter />
+              </SocialButton>
+              <SocialButton
+                label={"instagram"}
+                href={"https://www.instagram.com/psyspace.network/"}
+              >
+                <FaInstagram />
+              </SocialButton>
+            </Stack>
+          </Flex>
+        </Box>
+      </Center>
     </Box>
   );
 };

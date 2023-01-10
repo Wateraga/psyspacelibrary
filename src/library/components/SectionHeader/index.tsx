@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Flex, Text, chakra } from "@chakra-ui/react";
+import { Box, Flex, Text, chakra, useColorModeValue } from "@chakra-ui/react";
 // section header prop type
 interface SectionHeaderTypes {
   sectionHeading: string;
@@ -10,8 +10,6 @@ const SectionHeader = ({ sectionHeading, sectionBody }: SectionHeaderTypes) => {
   return (
     <>
       <Flex
-        // bg="#edf3f8"
-        // _dark={{ bg: "gray.800" }}
         p={{ base: 2, md: 50 }}
         w="full"
         alignItems="center"
@@ -23,8 +21,7 @@ const SectionHeader = ({ sectionHeading, sectionBody }: SectionHeaderTypes) => {
           py={4}
           rounded="lg"
           shadow="lg"
-          bg="white"
-          _dark={{ bg: "#3e3e3e" }}
+          bg={useColorModeValue("white", "gray.800")}
           maxW={"4xl"}
         >
           <Box mt={2}>

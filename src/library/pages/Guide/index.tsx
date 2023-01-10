@@ -1,7 +1,8 @@
 import React from "react";
 import { Grid, GridItem, Container } from "@chakra-ui/react";
 import guideData from "../../data/guide.json";
-import Card from "../../../library/components/Card";
+// import Card from "../../../library/components/Card";
+import InfoCard from "../../../library/components/InfoCard";
 import SectionHeader from "../../../library/components/SectionHeader";
 
 /**
@@ -17,16 +18,26 @@ const Guide = () => {
       />
       <Container maxW="4xl" my={{ base: 7, md: 5 }}>
         <Grid
-          templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(3, 1fr)" }}
+          templateColumns={{
+            base: "repeat(1, 1fr)",
+            md: "repeat(2, 1fr)",
+            lg: "repeat(3, 1fr)",
+          }}
           gap={{ base: 2, md: 5 }}
         >
           {guideData.post.map((post) => {
             return (
               <GridItem key={post.id}>
-                <Card
+                {/* <Card
                   cardHeading={post.postHeading}
                   cardBody={post.postBody}
-                  linkTo={post.link}
+                  linkTo={post.link} 
+                />*/}
+                <InfoCard
+                  heading={post.postHeading}
+                  description={post.postBody}
+                  redirectLink={post.link}
+                  image={post.image}
                 />
               </GridItem>
             );
