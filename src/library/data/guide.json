@@ -1,42 +1,48 @@
 {
-    "sectionHeading": "Psychedelic Guide",
-    "sectionHeadingDesc": "Here you will find guides to all mainstream and come experimental psychedelics, the hyper links are chosen keeping all type of audience in mind, feel free to read in any order 👀",
-    "post": [
-        {
-            "id": 1,
-            "postHeading": "LSD ",
-            "postBody": "Acid Rain",
-            "link": "https://thethirdwave.co/psychedelics/lsd/"
-        },
-        {
-            "id": 2,
-            "postHeading": "Magic Mushrooms",
-            "postBody": "Not the fridge one's",
-            "link": "https://www.shroomery.org/12500/Psilocybe-cubensis"
-        },
-        {
-            "id": 3,
-            "postHeading": "DMT",
-            "postBody": "Spirit molecule",
-            "link": "https://www.healthline.com/health/what-is-dmt"
-        },
-        {
-            "id": 4,
-            "postHeading": "MDMA",
-            "postBody": "Ecstacy",
-            "link": "https://thethirdwave.co/psychedelics/mdma/"
-        },
-        {
-            "id": 5,
-            "postHeading": "2C-B",
-            "postBody": "Child of acid & MDMA",
-            "link": "https://www.drugscience.org.uk/drug-information/2cb/"
-        },
-        {
-            "id": 6,
-            "postHeading": "Salvia",
-            "postBody": "Meet the god",
-            "link": "https://www.verywellmind.com/salvia-divinorum-a-legal-trip-3200920"
-        }
-    ]
+  "sectionHeading": "Psychedelic Guide",
+  "sectionHeadingDesc": "Here you will find guides to all mainstream and some experimental psychedelics, the hyper links are chosen keeping all type of audience in mind, feel free to read in any order 👀",
+  "post": [
+    {
+      "id": 1,
+      "postHeading": "LSD ",
+      "postBody": "Acid Rain",
+      "image": "https://images.unsplash.com/photo-1527844419094-7acdd482ae4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80",
+      "link": "https://thethirdwave.co/psychedelics/lsd/"
+    },
+    {
+      "id": 2,
+      "postHeading": "Magic Mushrooms",
+      "postBody": "Not the white one's",
+      "image": "https://images.unsplash.com/photo-1588464543826-087488aeb43a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80",
+      "link": "https://www.shroomery.org/12500/Psilocybe-cubensis"
+    },
+    {
+      "id": 3,
+      "postHeading": "DMT",
+      "postBody": "Spirit molecule",
+      "image": "https://images.unsplash.com/photo-1529059356407-0114ed24b913?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2411&q=80",
+      "link": "https://www.healthline.com/health/what-is-dmt"
+    },
+    {
+      "id": 4,
+      "postHeading": "MDMA",
+      "postBody": "Ecstacy",
+      "image": "https://images.unsplash.com/photo-1638609269451-7eb66b9c9707?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2736&q=80",
+      "link": "https://thethirdwave.co/psychedelics/mdma/"
+    },
+    {
+      "id": 5,
+      "postHeading": "2C-B",
+      "image": "https://images.unsplash.com/photo-1548693428-7f3fe57f5ec3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80",
+      "postBody": "Child of acid & MDMA",
+      "link": "https://www.drugscience.org.uk/drug-information/2cb/"
+    },
+    {
+      "id": 6,
+      "postHeading": "Salvia",
+      "image": "https://images.unsplash.com/photo-1592148815557-e4b2057b685e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c2FsdmlhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
+      "postBody": "Meet the god",
+      "link": "https://www.verywellmind.com/salvia-divinorum-a-legal-trip-3200920"
+    }
+  ]
 }
