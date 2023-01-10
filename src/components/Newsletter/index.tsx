@@ -1,11 +1,9 @@
 import React from "react";
 import { Stack, Heading, Container, Flex, Box } from "@chakra-ui/react";
-
 /**
  * @component
  * @return {React.ReactElement} Newsletter
  */
-
 const Newsletter = () => {
   return (
     <Flex minH={"300"} align={"center"} justify={"center"}>

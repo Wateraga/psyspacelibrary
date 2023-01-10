@@ -2,13 +2,11 @@ import React, { ReactNode } from "react";
 import { Link } from "react-router-dom";
 import {
   Box,
-  chakra,
   Container,
   SimpleGrid,
   Link as Linkk,
   Stack,
   Text,
-  VisuallyHidden,
   Button,
   Image,
   useColorModeValue,
@@ -16,41 +14,9 @@ import {
 import { FaTwitter } from "react-icons/fa";
 import { FaGlobe } from "react-icons/fa";
 import { FaReddit } from "react-icons/fa";
-
+import { FaInstagram } from "react-icons/fa";
+import SocialButton from "../../library/components/SocialButton";
 import PsySpaceLogo from "../../assests/images/PsySpace-text-log-350x60.png";
-
-//  Social media button component
-const SocialButton = ({
-  children,
-  label,
-  href,
-}: {
-  children: ReactNode;
-  label: string;
-  href: string;
-}) => {
-  return (
-    <chakra.button
-      bg={useColorModeValue("blackAlpha.100", "whiteAlpha.100")}
-      rounded={"full"}
-      w={8}
-      h={8}
-      cursor={"pointer"}
-      as={"a"}
-      href={href}
-      display={"inline-flex"}
-      alignItems={"center"}
-      justifyContent={"center"}
-      transition={"background 0.3s ease"}
-      _hover={{
-        bg: useColorModeValue("blackAlpha.200", "whiteAlpha.200"),
-      }}
-    >
-      <VisuallyHidden>{label}</VisuallyHidden>
-      {children}
-    </chakra.button>
-  );
-};
 
 //  List header to modify heading stylig for the column of itmes in the footer
 const ListHeader = ({ children }: { children: ReactNode }) => {
@@ -98,6 +64,12 @@ const Footer = () => {
               >
                 <FaTwitter />
               </SocialButton>
+              <SocialButton
+                label={"instagram"}
+                href={"https://www.instagram.com/psyspace.network/"}
+              >
+                <FaInstagram />
+              </SocialButton>
             </Stack>
           </Stack>
           <Stack align={"flex-start"}>
@@ -119,6 +91,18 @@ const Footer = () => {
                   textDecoration={"none"}
                 >
                   Subscribe to PsySpace Newsletter
+                </Button>
+              </Linkk>
+            </Box>
+            <Box>
+              <Linkk href="https://www.reddit.com/r/psyspace/" isExternal>
+                <Button
+                  leftIcon={<FaReddit />}
+                  colorScheme="teal"
+                  variant="solid"
+                  textDecoration={"none"}
+                >
+                  Join r/PsySpace Community
                 </Button>
               </Linkk>
             </Box>
