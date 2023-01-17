@@ -9,6 +9,9 @@ const BeginGuide = lazy(() => import("../pages/BeginGuide"));
 const LatestNews = lazy(() => import("../pages/LatestNews"));
 const Microdosing = lazy(() => import("../pages/Microdosing"));
 const PlanTrip = lazy(() => import("../pages/PlanTrip"));
+const NewslettersCollection = lazy(
+  () => import("../pages/NewsLettersCollection")
+);
 const Library = () => {
   return (
     <>
@@ -22,6 +25,10 @@ const Library = () => {
               <Route path="latest-news" element={<LatestNews />} />
               <Route path="microdosing" element={<Microdosing />} />
               <Route path="plan-your-trip" element={<PlanTrip />} />
+              <Route
+                path="newsletter-collection"
+                element={<NewslettersCollection />}
+              />
             </Routes>
           </LibraryPageLayout>
         </Sidebar>

@@ -29,6 +29,11 @@ export const LinkItems: Array<LinkItemProps> = [
     icon: BiNews,
     link: "/library/latest-news",
   },
+  {
+    name: "Best Newsletters",
+    icon: AiOutlineMail,
+    link: "/library/newsletter-collection",
+  },
 ];
 
 // coming soon items interface
@@ -39,11 +44,7 @@ interface ComingSoonTypes {
 // Coming soon options in side bar
 export const ComingSoonItems: Array<ComingSoonTypes> = [
   {
-    name: "Top Newsletters",
-    icon: AiOutlineMail,
-  },
-  {
-    name: "Best Music",
+    name: "Top Playlist",
     icon: BsMusicNoteBeamed,
   },
   {
@@ -51,7 +52,11 @@ export const ComingSoonItems: Array<ComingSoonTypes> = [
     icon: BiMoviePlay,
   },
   {
-    name: "Best Trip Reports",
+    name: "Best Books",
+    icon: TbReportAnalytics,
+  },
+  {
+    name: "Top Psychonauts",
     icon: TbReportAnalytics,
   },
 ];

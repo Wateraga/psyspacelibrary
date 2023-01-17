@@ -1,6 +1,6 @@
 {
   "sectionHeading": "Microdose Resources",
-  "sectionHeadingDesc": "Microdosing is one the new trend in psychedelics which is gaining alot of attention recently, no doubt it's one of most loved topic by new generation psychonauts",
+  "sectionHeadingDesc": "💊 Microdosing is one the new trend in psychedelics which is gaining alot of attention recently, no doubt it's one of most loved topic by new generation psychonauts, no doubt r/micordosing on reddit is one of the best resources out their to solve all you queries about Micordosing.",
   "post": [
     {
       "id": 0,
@@ -26,6 +26,18 @@
       "postHeading": "Is microdsing safe?",
       "postBody": "An article asswering some common concerns.",
       "link": "https://oxfordtreatment.com/substance-abuse/microdosing/"
+    },
+    {
+      "id": 4,
+      "postHeading": "Dosage and Regime",
+      "postBody": "How much should I take and how long will it last?",
+      "link": "https://www.reddit.com/r/microdosing/wiki/dosage-regime/"
+    },
+    {
+      "id": 5,
+      "postHeading": "Resources and References",
+      "postBody": "A listing of useful resources and reference by r/micordosing",
+      "link": "https://www.reddit.com/r/microdosing/wiki/resources/ˀ"
     }
   ]
 }

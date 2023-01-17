@@ -1,0 +1,46 @@
+{
+  "sectionHeading": "Heading",
+  "sectionHeadingDesc": "Desc of the section",
+  "post": [
+    {
+      "id": 0,
+      "image": "https://images.unsplash.com/photo-1588464543826-087488aeb43a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80",
+      "name": "string",
+      "socialProfile": "string",
+      "description": "string",
+      "hastags": ["string1", "string2"],
+      "subscribeLink": "string",
+      "followLinkg": "string,"
+    },
+    {
+      "id": 1,
+      "image": "https://images.unsplash.com/photo-1588464543826-087488aeb43a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80",
+      "name": "string",
+      "socialProfile": "string",
+      "description": "string",
+      "hastags": ["string1", "string2"],
+      "subscribeLink": "string",
+      "followLinkg": "string,"
+    },
+    {
+      "id": 2,
+      "image": "https://images.unsplash.com/photo-1588464543826-087488aeb43a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80",
+      "name": "string",
+      "socialProfile": "string",
+      "description": "string",
+      "hastags": ["string1", "string2"],
+      "subscribeLink": "string",
+      "followLinkg": "string,"
+    },
+    {
+      "id": 3,
+      "image": "https://images.unsplash.com/photo-1588464543826-087488aeb43a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80",
+      "name": "string",
+      "socialProfile": "string",
+      "description": "string",
+      "hastags": ["string1", "string2"],
+      "subscribeLink": "string",
+      "followLinkg": "string,"
+    }
+  ]
+}
