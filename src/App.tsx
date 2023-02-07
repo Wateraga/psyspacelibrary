@@ -8,9 +8,8 @@ import CookieConsent from "react-cookie-consent";
 import ReactGA from "react-ga";
 
 // initializing react ga
-const gaTrackId: string | undefined = process.env.REACT_APP_GA_TRACK_ID;
-ReactGA.initialize(gaTrackId!);
-console.log("trackId", gaTrackId);
+// const gaTrackId: string | undefined = process.env.REACT_APP_GA_TRACK_ID;
+ReactGA.initialize("G-NBQ6Y5X2MG");
 
 /**
  * @component
