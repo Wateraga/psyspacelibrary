@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from "react";
+import React, { lazy, Suspense, useEffect } from "react";
 import Sidebar from "../components/Sidebar";
 import { Routes, Route } from "react-router-dom";
 import LibraryPageLayout from "../components/LibraryPageLayout";
@@ -12,7 +12,17 @@ const PlanTrip = lazy(() => import("../pages/PlanTrip"));
 const NewslettersCollection = lazy(
   () => import("../pages/NewsLettersCollection")
 );
+import ReactGA from "react-ga";
+
+// initializing react ga
+const gaTrackId: string | undefined = process.env.REACT_APP_GA_TRACK_ID;
+ReactGA.initialize(gaTrackId!);
+console.log("trackId", gaTrackId);
+
 const Library = () => {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname);
+  }, []);
   return (
     <>
       <Suspense fallback={<Loader />}>

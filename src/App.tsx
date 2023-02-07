@@ -1,16 +1,26 @@
 //  app entry
-import React, { Suspense } from "react";
+import React, { Suspense, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import Loader from "./components/Loader";
 import Library from "./library/routes";
 import MainLayout from "./routes/MainLayout";
 import CookieConsent from "react-cookie-consent";
+import ReactGA from "react-ga";
+
+// initializing react ga
+const gaTrackId: string | undefined = process.env.REACT_APP_GA_TRACK_ID;
+ReactGA.initialize(gaTrackId!);
+console.log("trackId", gaTrackId);
 
 /**
  * @component
  * @return {route} routes
  */
 function App() {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname);
+  }, []);
+
   return (
     <>
       <Suspense fallback={<Loader />}>
@@ -32,7 +42,7 @@ function App() {
         }}
         expires={150}
       >
-        This website uses cookies to enhance the user experience!
+        This website uses cookies to enhance the user experience!!
       </CookieConsent>
     </>
   );

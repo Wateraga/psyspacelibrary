@@ -11,7 +11,6 @@ import {
   Container,
 } from "@chakra-ui/react";
 import { AiFillTwitterCircle } from "react-icons/ai";
-import { AiOutlineMail } from "react-icons/ai";
 
 import AuthorAvart from "../../assests/images/author_avatar.jpg";
 
@@ -45,8 +44,8 @@ const Author = () => {
               </Text>
             </Heading>
             <Text mt={2} color={"gray.500"}>
-              I created PsySpace library to help fellow psychonauts and everyone
-              to get best resources from all around the web about psychedelics,
+              I created PsySpace library to help psychonauts and everyone to get
+              best resources from all around the web about psychedelics,
               harmreduction, psychedelic therapy and sensible rational use of
               psychedelics!{" "}
             </Text>
@@ -66,19 +65,6 @@ const Author = () => {
                       leftIcon={<AiFillTwitterCircle />}
                     >
                       <Text>@dhashdev</Text>
-                    </Button>
-                  </Link>
-                </Box>
-                <Box>
-                  {" "}
-                  <Link href="mailto:dhruv@dhash.dev">
-                    <Button
-                      w={"full"}
-                      maxW={180}
-                      colorScheme={"messenger"}
-                      leftIcon={<AiOutlineMail />}
-                    >
-                      <Text>dhruv@dhash.dev</Text>
                     </Button>
                   </Link>
                 </Box>
