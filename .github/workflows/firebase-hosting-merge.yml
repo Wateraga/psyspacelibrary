@@ -8,6 +8,7 @@ name: Deploy to Firebase Hosting on merge
       - main
 env:
   REACT_APP_NEWS_FREE_API: "${{secrets.REACT_APP_NEWS_FREE_API}}"
+  REACT_APP_GA_TRACK_ID: "${{secrets.REACT_APP_GA_TRACK_ID}}"
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
