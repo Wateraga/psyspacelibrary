@@ -6,6 +6,7 @@ import {
   Flex,
   Heading,
   Image,
+  Link,
   //   Link,
   Stack,
   Text,
@@ -43,7 +44,7 @@ export default function NewsletterCard({
       <Stack
         borderWidth="1px"
         borderRadius="lg"
-        w={{ sm: "100%", md: "540px" }}
+        w={{ sm: "100%" }}
         // height={{ sm: "476px", md: "20rem" }}
         direction={{ base: "column", md: "row" }}
         bg={useColorModeValue("white", "gray.900")}
@@ -66,7 +67,7 @@ export default function NewsletterCard({
           p={1}
           pt={2}
         >
-          <Heading fontSize={"2xl"} fontFamily={"body"}>
+          <Heading fontSize={"xl"} fontFamily={"body"}>
             {name}
           </Heading>
           <Text fontWeight={600} color={"gray.500"} size="sm" mb={4}>
@@ -75,7 +76,8 @@ export default function NewsletterCard({
           <Text
             textAlign={"center"}
             color={useColorModeValue("gray.700", "gray.400")}
-            px={3}
+            px={1}
+            fontSize="sm"
           >
             {description}
           </Text>
@@ -104,34 +106,38 @@ export default function NewsletterCard({
             justifyContent={"space-between"}
             alignItems={"center"}
           >
-            <Button
-              flex={1}
-              fontSize={"sm"}
-              rounded={"full"}
-              _focus={{
-                bg: "gray.200",
-              }}
-            >
-              {subscribeLink}
-            </Button>
-            <Button
-              flex={1}
-              fontSize={"sm"}
-              rounded={"full"}
-              bg={"blue.400"}
-              color={"white"}
-              boxShadow={
-                "0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)"
-              }
-              _hover={{
-                bg: "blue.500",
-              }}
-              _focus={{
-                bg: "blue.500",
-              }}
-            >
-              {followLink}
-            </Button>
+            <Link href={followLink}>
+              <Button
+                flex={1}
+                fontSize={"sm"}
+                rounded={"full"}
+                _focus={{
+                  bg: "gray.200",
+                }}
+              >
+                Follow
+              </Button>
+            </Link>
+            <Link href={subscribeLink}>
+              <Button
+                flex={1}
+                fontSize={"sm"}
+                rounded={"full"}
+                bg={"blue.400"}
+                color={"white"}
+                boxShadow={
+                  "0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)"
+                }
+                _hover={{
+                  bg: "blue.500",
+                }}
+                _focus={{
+                  bg: "blue.500",
+                }}
+              >
+                Subscribe
+              </Button>
+            </Link>
           </Stack>
         </Stack>
       </Stack>

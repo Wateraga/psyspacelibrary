@@ -32,7 +32,6 @@ import SocialButton from "../SocialButton";
 import { FaTwitter } from "react-icons/fa";
 import { FaGlobe } from "react-icons/fa";
 import { FaReddit } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
 
 /**
  *
@@ -91,8 +90,10 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
       borderRight="1px"
       borderRightColor={useColorModeValue("gray.200", "gray.700")}
       w={{ base: "full", md: 60 }}
+      top="0"
+      bottom="0"
       pos="fixed"
-      h="full"
+      overflowY="scroll"
       {...rest}
     >
       <Flex h="20" alignItems="center" mx="8" justifyContent="space-between">
@@ -173,12 +174,6 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
                 href={"https://twitter.com/psyspacenetwork"}
               >
                 <FaTwitter />
-              </SocialButton>
-              <SocialButton
-                label={"instagram"}
-                href={"https://www.instagram.com/psyspace.network/"}
-              >
-                <FaInstagram />
               </SocialButton>
             </Stack>
           </Flex>
