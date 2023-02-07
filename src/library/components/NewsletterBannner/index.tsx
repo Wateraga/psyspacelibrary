@@ -51,7 +51,7 @@ const NewsletterBanner = () => {
               fontSize={{ base: "xl", sm: "2xl" }}
               textAlign={"center"}
             >
-              Subscribe to our Newsletter
+              Subscribe to PsySpace Newsletter
             </Heading>
             <Text color={"gray.600"} textAlign={"center"}>
               Be part of a community of people who share your interests 🍄 !

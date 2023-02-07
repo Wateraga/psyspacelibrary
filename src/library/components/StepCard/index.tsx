@@ -53,7 +53,7 @@ const StepCard = ({ stepHeading, stepBody }: StepCardTypes) => {
                 {stepBody.map((article) => {
                   return (
                     <Box key={article.articleNumber}>
-                      <Link isExternal href={`{${article.articleLink}}`}>
+                      <Link isExternal href={`${article.articleLink}`}>
                         <ListItem>{article.articleName}</ListItem>
                       </Link>
                     </Box>

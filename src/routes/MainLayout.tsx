@@ -5,15 +5,9 @@ const Layout = lazy(() => import("../components/Layout"));
 const Faq = lazy(() => import("../pages/Faq"));
 const Privacy = lazy(() => import("../pages/Privacy"));
 const Terms = lazy(() => import("../pages/Terms"));
-// const Loader = lazy(() => import("../components/Loader"));
 const NotFound = lazy(() => import("../pages/NotFound"));
 import Loader from "../components/Loader";
-// import NotFound from "../pages/NotFound";
-// import Layout from "../components/Layout";
-// import Home from "../pages/Home";
-// import Faq from "../pages/Faq";
-// import Terms from "../pages/Terms";
-// import Privacy from "../pages/Privacy";
+
 /**
  * Component for rendering main routes.
  *
