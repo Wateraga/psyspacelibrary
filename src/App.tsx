@@ -1,6 +1,6 @@
 //  app entry
 import React, { Suspense, useEffect } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Loader from "./components/Loader";
 import Library from "./library/routes";
 import MainLayout from "./routes/MainLayout";
