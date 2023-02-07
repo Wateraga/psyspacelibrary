@@ -1,46 +1,66 @@
 {
-  "sectionHeading": "Heading",
-  "sectionHeadingDesc": "Desc of the section",
+  "sectionHeading": "Top Newsletters",
+  "sectionHeadingDesc": "📰 These are some of the best newsletters we have found till now, all of them have unique information to offer in their way, some are focused on single topics and some are general.",
   "post": [
     {
       "id": 0,
-      "image": "https://images.unsplash.com/photo-1588464543826-087488aeb43a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80",
-      "name": "string",
-      "socialProfile": "string",
-      "description": "string",
-      "hastags": ["string1", "string2"],
-      "subscribeLink": "string",
-      "followLinkg": "string,"
+      "image": "https://substackcdn.com/image/fetch/w_170,c_limit,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F38ae3273-fa88-40c2-abe9-00c3d9c893d1_500x500.png",
+      "name": "PsySpace",
+      "socialProfile": "pyspacenetwork",
+      "description": "Your bi-weekly dose of what's latest in psychedelics and technology!",
+      "hastags": ["psychedelics", "technology"],
+      "subscribeLink": "https://psyspace.substack.com/",
+      "followLinkg": "https://twitter.com/psyspacenetwork"
     },
     {
       "id": 1,
-      "image": "https://images.unsplash.com/photo-1588464543826-087488aeb43a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80",
-      "name": "string",
-      "socialProfile": "string",
-      "description": "string",
-      "hastags": ["string1", "string2"],
-      "subscribeLink": "string",
-      "followLinkg": "string,"
+      "image": "https://psychedelicstoday.com/wp-content/uploads/2022/12/1-1-768x485.png",
+      "name": "Psychedelics Today",
+      "socialProfile": "PsydelicsToday",
+      "description": "Psychedelics Today is the planetary leader in psychedelic education and advocacy.",
+      "hastags": ["education", "advocacy"],
+      "subscribeLink": "https://psychedelicstoday.com/article/",
+      "followLinkg": "https://twitter.com/Psydelicstoday"
     },
     {
       "id": 2,
-      "image": "https://images.unsplash.com/photo-1588464543826-087488aeb43a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80",
-      "name": "string",
-      "socialProfile": "string",
-      "description": "string",
-      "hastags": ["string1", "string2"],
-      "subscribeLink": "string",
-      "followLinkg": "string,"
+      "image": "https://blossomanalysis.com/wp-content/uploads/2021/10/Site-Icon-v2.png",
+      "name": "blossomanalysis",
+      "socialProfile": "blossomact",
+      "description": "Newsletter about psychedelics as medicine, from research to implementation.",
+      "hastags": ["medicine", "research"],
+      "subscribeLink": "https://blossomanalysis.com/newsletter/",
+      "followLinkg": "https://twitter.com/blossomact"
     },
     {
       "id": 3,
-      "image": "https://images.unsplash.com/photo-1588464543826-087488aeb43a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80",
-      "name": "string",
-      "socialProfile": "string",
-      "description": "string",
-      "hastags": ["string1", "string2"],
-      "subscribeLink": "string",
-      "followLinkg": "string,"
+      "image": "https://pbs.twimg.com/profile_images/1380235035056381953/xNScL4BP_400x400.jpg",
+      "name": "MAPS",
+      "socialProfile": "MAPS",
+      "description": "MAPS is a non-profit organization specializing in research and education.",
+      "hastags": ["research", "therapy"],
+      "subscribeLink": "https://maps.org/news/update/",
+      "followLinkg": "https://twitter.com/MAPS"
+    },
+    {
+      "id": 4,
+      "image": "https://substackcdn.com/image/fetch/w_1272,c_limit,f_webp,q_auto:best,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F6f5c3fd5-154d-41ef-bd16-9c09023006f2_1280x640.png",
+      "name": "The Trip Report",
+      "socialProfile": "zach_haigney",
+      "description": "Newsletter  on the business, policy and science of psychedelics.",
+      "hastags": ["business", "science"],
+      "subscribeLink": "https://www.thetripreport.com/subscribe",
+      "followLinkg": "https://twitter.com/zach_haigney"
+    },
+    {
+      "id": 5,
+      "image": "https://substackcdn.com/image/fetch/w_1272,c_limit,f_webp,q_auto:best,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F29e0f852-b51c-40d2-925f-b661aed117ed_1280x749.png",
+      "name": "The Microdose",
+      "socialProfile": "michaelpollan",
+      "description": " The Microdose, Newsletter about takes on developments in the field of psychedelics.",
+      "hastags": ["Microdose", "therapy"],
+      "subscribeLink": "https://themicrodose.substack.com/",
+      "followLinkg": "https://twitter.com/michaelpollan"
     }
   ]
 }
