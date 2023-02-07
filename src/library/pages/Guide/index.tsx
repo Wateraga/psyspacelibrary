@@ -1,7 +1,6 @@
 import React from "react";
 import { Grid, GridItem, Container } from "@chakra-ui/react";
 import guideData from "../../data/guide.json";
-// import Card from "../../../library/components/Card";
 import InfoCard from "../../../library/components/InfoCard";
 import SectionHeader from "../../../library/components/SectionHeader";
 

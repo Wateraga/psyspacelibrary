@@ -1,11 +1,11 @@
 {
   "planTripHeading": "Plan your next psychedelic trip with our small roadmap",
-  "planTripBody": "Plan your next trip with our small point based roadmap with important points collected after quite a many experience, these are dose independent and works for most case but as always every trip is unique, hence it can subjective to some extend 🗓️",
+  "planTripBody": "Plan your next trip with our small point based roadmap with important points collected from all over the web, these are dose independent and works for most case but as always every trip is unique, hence it can subjective, please do your own research as well🗓️",
   "planTripSteps": [
     {
-      "stepName": "Get Ready",
+      "stepName": "Getting Ready",
       "stepNumber": 0,
-      "stepDescription": "First step is to get ready, both mentally and physically. This process should be started atleat a 7 to 10 days prior to your",
+      "stepDescription": "First step is to get ready, both mentally and physically. This process should be started atleat a 7 to 10 days prior to your day of experience.",
       "detailedDescription": [
         {
           "pointNumber": 0,
@@ -13,11 +13,11 @@
         },
         {
           "pointNumber": 2,
-          "point": "Refrain from or no drug user prior"
+          "point": "Refrain from or no drug use prior to the experience"
         },
         {
           "pointNumber": 3,
-          "point": "Avoid high acid food, alcholo and sex"
+          "point": "Avoid high acid food, alcohol and sex"
         },
         {
           "pointNumber": 4,
@@ -28,13 +28,13 @@
           "point": "Avoid toxic situtation"
         }
       ],
-      "reference": "How to safe trip",
+      "reference": "How to have a safe trip",
       "referenceLink": "https://psyche.co/guides/how-to-have-a-safe-psychedelic-trip"
     },
     {
       "stepName": "Intention setting",
       "stepNumber": 1,
-      "stepDescription": "Write down the intention of your trip on a blank page and keep it open if can, this is the anchor for your experience, whenever you feel overwhelmed or anxious.",
+      "stepDescription": "Write down the intention of your trip on a blank page and keep it with you while in the experience, this is the anchor for your experience, for whenever you feel overwhelmed or anxious.",
       "detailedDescription": [
         {
           "pointNumber": 0,
@@ -42,11 +42,11 @@
         },
         {
           "pointNumber": 1,
-          "point": "Spend some time to figure your intention out"
+          "point": "So Spend some time to figure your intention for it"
         },
         {
           "pointNumber": 2,
-          "point": "Write it down on a paper, journal or notes"
+          "point": "Write it down on a paper, journal it or whatever is your prefered way of noting things down"
         },
         {
           "pointNumber": 3,
@@ -68,6 +68,10 @@
         {
           "pointNumber": 1,
           "point": "Make sure you dose properly, especially for first timers"
+        },
+        {
+          "pointNumber": 2,
+          "point": "For right dosage do your own research, preferably on psychonaut wiki or reddit, tip: start small"
         }
       ],
       "reference": "Testing methods for LSD",
@@ -80,7 +84,7 @@
       "detailedDescription": [
         {
           "pointNumber": 0,
-          "point": "Keep some water, lemon or lime handy for come up"
+          "point": "Keep some water, lemon or lime handy for the come up"
         },
         {
           "pointNumber": 1,
@@ -167,16 +171,16 @@
         },
         {
           "pointNumber": 3,
-          "point": "Reach out if needed, don't think, what they will think"
+          "point": "Reach out if needed, don't think too much about it. "
         }
       ],
-      "reference": "Help bad trip high",
+      "reference": "Help bad trip or a high",
       "referenceLink": "https://sunrisehouse.com/cause-effect/help-bad-trip-high/"
     },
     {
       "stepName": "Have something to play",
       "stepNumber": 7,
-      "stepDescription": "Colors, drawing book, bubble machine or whater is your thing, it can be exetremly intresting, have something to chew like gummy bears and something soft/ velvet type thing to touch, no specific reason, it's just feels awesome",
+      "stepDescription": "Colors, drawing book, bubble machine or whater is your thing, it can be exetremly intresting, have something to chew like gummy bears and something soft/ velvet type thing to touch, no specific reason, it just feels awesome",
       "detailedDescription": [
         {
           "pointNumber": 0,
@@ -184,7 +188,7 @@
         },
         {
           "pointNumber": 1,
-          "point": "Playing instrument, if you and if you can"
+          "point": "Playing instrument, if you can"
         },
         {
           "pointNumber": 2,
@@ -213,7 +217,7 @@
         },
         {
           "pointNumber": 2,
-          "point": "Do stretching or yoga, thank us later!"
+          "point": "Do stretching or yoga, anything involving getting into flowstate"
         },
         {
           "pointNumber": 4,

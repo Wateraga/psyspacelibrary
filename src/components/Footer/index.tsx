@@ -14,7 +14,6 @@ import {
 import { FaTwitter } from "react-icons/fa";
 import { FaGlobe } from "react-icons/fa";
 import { FaReddit } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
 import SocialButton from "../../library/components/SocialButton";
 import PsySpaceLogo from "../../assests/images/PsySpace-text-log-350x60.png";
 
@@ -63,12 +62,6 @@ const Footer = () => {
                 href={"https://twitter.com/psyspacenetwork"}
               >
                 <FaTwitter />
-              </SocialButton>
-              <SocialButton
-                label={"instagram"}
-                href={"https://www.instagram.com/psyspace.network/"}
-              >
-                <FaInstagram />
               </SocialButton>
             </Stack>
           </Stack>
